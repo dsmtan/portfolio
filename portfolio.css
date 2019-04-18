@@ -1,0 +1,110 @@
+/* Colors
+pink: #EFBAA7
+yellow: #D5AD39 / lighter shade: #E3C672
+dark blue:#0C2F44
+bluegrey: #C4D5E0
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* INDEX PAGE */
+
+#indexbody {
+  color: #0c2f44;
+}
+
+#nameheader {
+  margin-left: 36%;
+  padding-top: 14vh;
+  border-bottom: 4px solid #0c2f44;
+}
+
+#headertext {
+  font-family: "Brandon Grotesque Light", sans-serif;
+  font-size: 3.8em;
+  margin: 0;
+  margin-left: -14px;
+  padding: 5px 10px;
+}
+
+#indexbackground {
+  background: url(images/linespng.png);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: auto 90%;
+  background-repeat: no-repeat;
+  background-position: -230px 25px;
+  z-index: 0;
+  text-align: center;
+}
+
+#trianglebackground {
+  background: url(images/triangles.png);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: auto 580px;
+  background-position: 6.5vw 5vh;
+  z-index: 1;
+  text-align: center;
+}
+
+div#introblock {
+  position: relative;
+  height: auto;
+  width: 41em;
+  background-color: #dfc169;
+  margin-top: 25%;
+  margin-left: 40vw;
+}
+
+#introtext {
+  padding: 0.6em 10px;
+  margin: 0;
+  font-size: 2.1em;
+  font-family: "mrs-eaves", serif;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+#sidenav {
+  height: 85px;
+  width: 100vh;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  background: #efbaa7;
+  transform-origin: right top;
+  transform: rotate(90deg) translateX(100%);
+}
+
+nav#sidenav > button {
+  bottom: 0%;
+  right: 0%;
+  background-color: transparent;
+  border: none;
+  font-family: "Brandon Grotesque", sans-serif;
+  padding: 1.2em 2.5em;
+  margin-top: 15px;
+}
+
+button > a {
+  text-decoration: none;
+  color: #0c2f44;
+  font-size: 2em;
+  font-weight: 400;
+}
