@@ -5,6 +5,8 @@ dark blue:#0C2F44
 bluegrey: #C4D5E0
 */
 
+@import url("https://use.typekit.net/wxs3hfe.css");
+
 * {
   box-sizing: border-box;
 }
@@ -14,6 +16,54 @@ body {
   height: 100%;
   margin: 0;
   color: #0c2f44;
+}
+
+/* MOBILE NAV */
+#burgermenu {
+  height: 20px;
+  margin: 2px;
+  margin-left: 2.4em;
+  cursor: pointer;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  background-color: rgba(196, 213, 224, 0.96);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  font-family: "brandon-grotesque", sans-serif;
+  font-weight: 300;
+  font-size: 3em;
+  padding: 0.5em;
+  color: #0c2f44;
+  display: block;
+  transition: 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: -20px;
+  right: 10px;
+  font-size: 4em;
+  padding-right: 10px;
 }
 
 #sidenav {
@@ -32,7 +82,7 @@ body {
 #sidenav > button {
   background-color: transparent;
   border: none;
-  font-family: "Brandon Grotesque", sans-serif;
+  font-family: "brandon-grotesque", sans-serif;
   padding: 1.2em 1.5em;
   margin: 1em;
   margin-top: 10px;
@@ -53,6 +103,10 @@ button > a {
 }
 
 @media screen and (min-height: 34.5em) and (min-width: 60em) {
+  #burgermenu {
+    display: none;
+  }
+
   #sidenav {
     display: block;
   }
@@ -83,8 +137,9 @@ button > a {
 }
 
 .headertext {
-  font-family: "Brandon Grotesque Light", sans-serif;
-  font-size: 2em;
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: 2.1em;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -124,7 +179,7 @@ button > a {
 
 div#introblock {
   position: absolute;
-  height: 6em;
+  height: auto;
   width: 85%;
   padding: 15px;
   background-color: #d1b150;
@@ -137,7 +192,7 @@ div#introblock {
   position: relative;
   margin: 0;
   margin-left: 5px;
-  font-size: 1.2em;
+  font-size: 1.6em;
   font-family: "mrs-eaves", serif;
   font-style: italic;
   font-weight: lighter;
@@ -152,14 +207,15 @@ div#introblock {
 }
 
 #pfheader {
-  margin-right: 25%;
-  border-bottom: 3px solid #0c2f44;
+  margin-right: 27%;
+  border-bottom: 3px solid #efbaa7;
   text-align: right;
 }
 
 #pftext {
-  color: #d5ad39;
+  color: #0c2f44;
   margin-right: -2px;
+  font-weight: 300;
 }
 
 #pfwrapper {

@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="https://use.typekit.net/wxs3hfe.css" />
   </head>
   <body id="body">
+    <nav id="mobilenav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="index.html#indexSection">Home</a>
+        <a href="index.html#portfolioection">Portfolio</a>
+        <a href="index.html#aboutSection">About Me</a>
+      </div>
+    </nav>
+
     <nav id="sidenav">
       <button><a href="">HOME</a></button>
       <button><a href="">PORTFOLIO</a></button>
@@ -16,11 +27,11 @@
       <img id="navarrow" src="images/arrows.png" />
     </nav>
 
-    <nav id="mobilenav"></nav>
-
     <section id="indexSection">
       <div id="nameheader">
-        <h1 id="nametext" class="headertext">DENISE TAN</h1>
+        <h1 id="nametext" class="headertext">
+          DENISE TAN <img id="burgermenu" src="images/burgermenu.svg" />
+        </h1>
       </div>
 
       <div id="indexbackground">
@@ -57,5 +68,7 @@
 
       <div id="aboutwrapper"></div>
     </section>
+
+    <script src="js/portfolio.js"></script>
   </body>
 </html>
