@@ -1,8 +1,13 @@
-/* Colors
+/* COLORSCHEME
 pink: #EFBAA7
-yellow: #D5AD39 / lighter shade: #E3C672
+yellow: #D5AD39 / lighter shade: #DCBB5B
 dark blue:#0C2F44
 bluegrey: #C4D5E0
+
+TYPOGRAPHY
+Headers: brandon-grotesque, font-weight: 300, all caps
+Subheaders: mrs-eaves
+Paragraphs: brandon-grotesque
 */
 
 @import url("https://use.typekit.net/wxs3hfe.css");
@@ -18,11 +23,15 @@ body {
   color: #0c2f44;
 }
 
-/* MOBILE NAV */
+/*---------------------------*\ 
+     #NAVIGATION MOBILE
+\*---------------------------*/
+
 #burgermenu {
+  float: right;
   height: 20px;
-  margin: 2px;
-  margin-left: 2.4em;
+  margin-right: 5px;
+  margin-top: 15px;
   cursor: pointer;
 }
 
@@ -47,12 +56,12 @@ body {
 }
 
 .overlay a {
+  display: block;
   font-family: "brandon-grotesque", sans-serif;
   font-weight: 300;
   font-size: 3em;
   padding: 0.5em;
   color: #0c2f44;
-  display: block;
   transition: 0.3s;
   text-decoration: none;
   cursor: pointer;
@@ -65,6 +74,10 @@ body {
   font-size: 4em;
   padding-right: 10px;
 }
+
+/*-----------------------------------------*\ 
+    #NAVIGATION SIDE + VERTICAL DESKTOP
+\*-----------------------------------------*/
 
 #sidenav {
   display: none;
@@ -102,31 +115,9 @@ button > a {
   right: 4%;
 }
 
-@media screen and (min-height: 34.5em) and (min-width: 60em) {
-  #burgermenu {
-    display: none;
-  }
-
-  #sidenav {
-    display: block;
-  }
-}
-
-@media screen and (min-height: 43em) {
-  #sidenav > button {
-    padding: 1.2em 2.5em;
-  }
-
-  button > a {
-    font-size: 2.1em;
-  }
-
-  #navarrow {
-    height: 30px;
-  }
-}
-
-/* INDEX SECTION */
+/*----------------------------------*\ 
+    #INDEX GRAPHICS SECTION MOBILE
+\*----------------------------------*/
 
 #nameheader {
   position: relative;
@@ -139,7 +130,7 @@ button > a {
 .headertext {
   font-family: "brandon-grotesque", sans-serif;
   font-size: 2.1em;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0;
 }
 
@@ -182,7 +173,7 @@ div#introblock {
   height: auto;
   width: 85%;
   padding: 15px;
-  background-color: #d1b150;
+  background-color: #dcbb5b;
   top: 10em;
   right: 0.8em;
   z-index: 5;
@@ -200,7 +191,9 @@ div#introblock {
   word-wrap: break-word;
 }
 
-/* PORTFOLIO SECTION */
+/*------------------------------*\ 
+    #PORTFOLIO SECTION MOBILE
+\*------------------------------*/
 
 #portfolioSection {
   margin-top: 68vh;
@@ -231,19 +224,65 @@ div#introblock {
 
 #pfwrapper > article {
   background-color: #c4d5e0;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 1em;
+  min-height: 50vh;
 }
 
 #pfwrapper > article > img {
-  position: relative;
-  height: 50vh;
+  object-fit: contain;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 50vh;
 }
 
-/* MEDIA QUERIES */
+/*------------------------------*\ 
+    #ABOUT SECTION MOBILE
+\*------------------------------*/
+
+/*------------------------------*\ 
+    !!!  #MEDIA QUERIES  !!!
+\*------------------------------*/
+
+/*----------- NAVIGATION -----------*/
+
+@media screen and (min-height: 34.5em) and (min-width: 60em) {
+  #burgermenu {
+    display: none;
+  }
+
+  #mobilenav {
+    display: none;
+  }
+
+  #sidenav {
+    display: block;
+  }
+}
+
+@media screen and (min-height: 43em) {
+  #sidenav > button {
+    padding: 1.2em 2.5em;
+  }
+
+  button > a {
+    font-size: 2.1em;
+  }
+
+  #navarrow {
+    height: 30px;
+  }
+}
+
+/*----------- #TABLET SIZE PAGE CONTENT -----------*/
 
 @media screen and (min-width: 600px) {
 }
+
+/*----------- #SMALL DESKTOP SIZE PAGE CONTENT -----------*/
 
 @media screen and (min-width: 1150px) {
   section {
@@ -252,6 +291,7 @@ div#introblock {
     margin: 0;
   }
 
+  /* >> INDEX SECTION 1150px */
   #nameheader {
     margin-left: 36%;
     margin-top: 12vh;
@@ -267,7 +307,7 @@ div#introblock {
     max-height: none;
     top: 0;
     background-size: auto 92%;
-    background-position: -230px 25px;
+    background-position: -240px 25px;
   }
 
   #trianglebackground {
@@ -278,28 +318,28 @@ div#introblock {
     height: 83vh;
     min-height: none;
     width: 48vw;
+    top: 3.5vh;
     left: -40px;
     opacity: 1;
   }
 
   div#introblock {
-    height: auto;
     width: 45vw;
     max-width: 755px;
     padding: 35px 30px;
-    background-color: #d1b150;
+    background-color: #dcbb5b;
     transform: skew(-16deg);
-    top: 22em;
+    top: 23em;
     left: calc(48vw - 55px);
   }
 
   #introtext {
     margin-left: 18px;
-    font-size: 1.9em;
+    font-size: 2.1em;
     transform: skew(16deg);
   }
 
-  /* PORTFOLIO SECTION */
+  /* >> PORTFOLIO SECTION 1150px */
 
   #portfolioSection {
     margin-top: 2em;
@@ -312,6 +352,7 @@ div#introblock {
 
   #pftext {
     margin-right: -5px;
+    color: #d5ad39;
   }
 
   #pfwrapper {
@@ -320,12 +361,21 @@ div#introblock {
     min-width: 900px;
     display: grid;
     grid-template-columns: 1fr 1fr 0.3fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 18px;
+    grid-template-rows: 35vh 35vh;
+  }
+
+  #pfwrapper > article {
+    min-height: 25vh;
+    padding: 1.5em;
   }
 
   #pfwrapper > article > img {
-    max-height: 90%;
+    max-height: 100%;
+    opacity: 0.7;
+  }
+
+  #pfwrapper > article > img#playgroundimg {
+    opacity: 0.9;
   }
 
   #pf1 {
@@ -349,12 +399,20 @@ div#introblock {
   }
 }
 
+/* >> ABOUT SECTION 1150px */
+
+/*----------- #LARGE DESKTOP SIZE PAGE CONTENT -----------*/
+
 @media screen and (min-width: 1550px) {
   .headertext {
     font-size: 4.2em;
   }
 
+  div#introblock {
+    top: 24em;
+  }
+
   #introtext {
-    font-size: 2.2em;
+    font-size: 2.4em;
   }
 }
