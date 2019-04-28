@@ -31,7 +31,7 @@ body {
   float: right;
   height: 20px;
   margin-right: 5px;
-  margin-top: 15px;
+  margin-top: 12px;
   cursor: pointer;
 }
 
@@ -119,9 +119,15 @@ button > a {
     #INDEX GRAPHICS SECTION MOBILE
 \*----------------------------------*/
 
+#indexSection {
+  height: 75vh;
+  margin: 0;
+  margin-bottom: 3em;
+}
+
 #nameheader {
   position: relative;
-  margin-top: 2em;
+  padding-top: 1.2em;
   margin-left: 5.5em;
   border-bottom: 3px solid #0c2f44;
   z-index: 3;
@@ -129,9 +135,10 @@ button > a {
 
 .headertext {
   font-family: "brandon-grotesque", sans-serif;
-  font-size: 2.1em;
+  font-size: 1.9em;
   font-weight: 300;
   margin: 0;
+  text-transform: uppercase;
 }
 
 #nametext {
@@ -143,51 +150,52 @@ button > a {
   position: absolute;
   background: url(images/testlines.png);
   height: 140vw;
-  max-height: 70%;
+  max-height: 75%;
   width: 100%;
-  top: 40px;
+  top: 45px;
   left: 0;
   background-size: auto 100%;
   background-repeat: no-repeat;
-  background-position: -220px;
+  background-position: -225px;
   z-index: 0;
 }
 
 #trianglebackground {
   position: relative;
-  background: url(images/triangles_mobile.png);
+  background: url(images/triangles_mobile_yellow.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
-  min-height: 80%;
+  min-height: 81%;
   width: 100%;
   float: left;
-  top: 2vh;
-  left: -70px;
-  opacity: 0.9;
+  top: 11vh;
+  left: -69px;
   z-index: 1;
+}
+
+#trianglebackground > svg {
+  display: none;
 }
 
 div#introblock {
   position: absolute;
   height: auto;
-  width: 85%;
-  padding: 15px;
-  background-color: #dcbb5b;
-  top: 10em;
-  right: 0.8em;
+  width: 82%;
+  padding: 12px;
+  top: 8vh;
+  right: 0.7em;
   z-index: 5;
 }
 
 #introtext {
   position: relative;
   margin: 0;
-  margin-left: 5px;
-  font-size: 1.6em;
+  font-size: 1.4em;
   font-family: "mrs-eaves", serif;
   font-style: italic;
   font-weight: lighter;
-  text-align: left;
+  text-align: justify;
   word-wrap: break-word;
 }
 
@@ -196,19 +204,19 @@ div#introblock {
 \*------------------------------*/
 
 #portfolioSection {
-  margin-top: 68vh;
+  margin-top: 1em;
 }
 
 #pfheader {
   margin-right: 27%;
-  border-bottom: 3px solid #efbaa7;
+  border-bottom: 3px solid #d5ad39;
   text-align: right;
 }
 
 #pftext {
   color: #0c2f44;
+  font-size: 1.8em;
   margin-right: -2px;
-  font-weight: 300;
 }
 
 #pfwrapper {
@@ -224,11 +232,13 @@ div#introblock {
 
 #pfwrapper > article {
   background-color: #c4d5e0;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1em;
-  min-height: 50vh;
+  height: 40vh;
+  cursor: pointer;
 }
 
 #pfwrapper > article > img {
@@ -236,12 +246,101 @@ div#introblock {
   height: auto;
   width: auto;
   max-width: 100%;
-  max-height: 50vh;
+  max-height: 100%;
+}
+
+.titlelayer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #0c2f44;
+}
+
+.projecttitle {
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: 2.5em;
+  color: #d5ad39;
+  margin: 0.5em;
 }
 
 /*------------------------------*\ 
     #ABOUT SECTION MOBILE
 \*------------------------------*/
+
+#aboutSection {
+  margin-top: 7em;
+}
+#aboutheader {
+  margin-right: 27%;
+  border-bottom: 3px solid #efbaa7;
+  text-align: right;
+}
+
+#abouttext {
+  color: #0c2f44;
+  margin-right: -2px;
+}
+
+p {
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #0c2f44;
+  margin: 1.5em 1.8em;
+  text-align: justify;
+}
+
+#profileimg {
+  height: 360px;
+  width: 95%;
+  margin: 0 auto;
+  background-image: url(images/aboutprofile_pink.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+#profilelinks {
+  transform: rotate(-14.5deg);
+  transform-origin: right bottom;
+  position: relative;
+  top: 10px;
+}
+
+#profilelinks > a {
+  display: inline;
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #0c2f44;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 0.8em;
+  cursor: pointer;
+}
+
+#understanding {
+  margin: 1.5em;
+}
+
+#understanding > h3 {
+  font-size: 2em;
+  font-family: "mrs-eaves", serif;
+  font-style: italic;
+  font-weight: 500;
+  text-align: left;
+}
+
+.icons {
+  height: 50px;
+  margin: 0.5em;
+  text-shadow: 0 0 3px #000;
+}
 
 /*------------------------------*\ 
     !!!  #MEDIA QUERIES  !!!
@@ -261,6 +360,10 @@ div#introblock {
   #sidenav {
     display: block;
   }
+
+  #profileimg {
+    background-image: url(images/aboutprofile.png);
+  }
 }
 
 @media screen and (min-height: 43em) {
@@ -277,14 +380,46 @@ div#introblock {
   }
 }
 
-/*----------- #TABLET SIZE PAGE CONTENT -----------*/
+/*-------------- #TABLET SIZE PAGE CONTENT ---------------*/
 
 @media screen and (min-width: 600px) {
+  #indexSection {
+    height: 100vh;
+  }
+
+  #indexbackground {
+    position: absolute;
+    background: url(images/testlines.png);
+    height: 140vw;
+    max-height: 70%;
+    width: 100%;
+    top: 40px;
+    left: 0;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: -220px;
+    z-index: 0;
+  }
+
+  #trianglebackground {
+    position: relative;
+    background: url(images/triangles_mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    min-height: 80%;
+    width: 100%;
+    float: left;
+    top: 2vh;
+    left: -70px;
+    opacity: 0.9;
+    z-index: 1;
+  }
 }
 
 /*----------- #SMALL DESKTOP SIZE PAGE CONTENT -----------*/
 
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1100px) {
   section {
     display: block;
     height: 100vh;
@@ -306,21 +441,31 @@ div#introblock {
     height: 100vh;
     max-height: none;
     top: 0;
-    background-size: auto 92%;
+    background-size: auto 91%;
     background-position: -240px 25px;
   }
 
   #trianglebackground {
-    background: url(images/triangles.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
+    background: none;
+    display: block;
     height: 83vh;
     min-height: none;
     width: 48vw;
     top: 3.5vh;
     left: -40px;
     opacity: 1;
+    text-align: right;
+  }
+
+  #trianglebackground > svg {
+    display: inline;
+    position: relative;
+    object-fit: cover;
+    object-position: right;
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
   }
 
   div#introblock {
@@ -329,13 +474,13 @@ div#introblock {
     padding: 35px 30px;
     background-color: #dcbb5b;
     transform: skew(-16deg);
-    top: 23em;
-    left: calc(48vw - 55px);
+    top: 40vh;
+    left: calc(48vw - 58px);
   }
 
   #introtext {
     margin-left: 18px;
-    font-size: 2.1em;
+    font-size: 2em;
     transform: skew(16deg);
   }
 
@@ -364,20 +509,6 @@ div#introblock {
     grid-template-rows: 35vh 35vh;
   }
 
-  #pfwrapper > article {
-    min-height: 25vh;
-    padding: 1.5em;
-  }
-
-  #pfwrapper > article > img {
-    max-height: 100%;
-    opacity: 0.7;
-  }
-
-  #pfwrapper > article > img#playgroundimg {
-    opacity: 0.9;
-  }
-
   #pf1 {
     grid-area: 1 / 1;
   }
@@ -397,19 +528,31 @@ div#introblock {
   #pf5 {
     grid-area: 2 / 3 / 3 / span 2;
   }
-}
 
-/* >> ABOUT SECTION 1150px */
+  #pfwrapper > article {
+    min-height: 25vh;
+    height: auto;
+    padding: 1.5em;
+  }
+
+  #pfwrapper > article > img {
+    max-height: 100%;
+    opacity: 0.95;
+  }
+
+  .titlelayer:hover {
+    transition: 0.4s ease;
+    opacity: 0.95;
+  }
+
+  /* >> ABOUT SECTION 1150px */
+}
 
 /*----------- #LARGE DESKTOP SIZE PAGE CONTENT -----------*/
 
 @media screen and (min-width: 1550px) {
   .headertext {
     font-size: 4.2em;
-  }
-
-  div#introblock {
-    top: 24em;
   }
 
   #introtext {
