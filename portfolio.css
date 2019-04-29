@@ -14,6 +14,7 @@ Paragraphs: brandon-grotesque
 
 * {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 html,
@@ -62,7 +63,6 @@ body {
   font-size: 2.5em;
   padding: 0.5em;
   color: #0c2f44;
-  transition: 0.3s;
   text-decoration: none;
   cursor: pointer;
 }
@@ -204,7 +204,7 @@ div#introblock {
 \*------------------------------*/
 
 #portfolioSection {
-  margin-top: 1.2em;
+  padding-top: 1.2em;
 }
 
 #pfheader {
@@ -272,7 +272,8 @@ div#introblock {
 \*------------------------------*/
 
 #aboutSection {
-  margin-top: 7em;
+  margin-top: 5.8em;
+  padding-top: 1.2em;
 }
 #aboutheader {
   margin-right: 27%;
@@ -363,6 +364,10 @@ p {
   justify-content: center;
 }
 
+.icons:focus {
+  outline: 0;
+}
+
 .iconselected {
   background-color: #d5ad39;
 }
@@ -391,6 +396,15 @@ p {
 .nextarrow {
   font-weight: 500;
   margin-left: 0.8em;
+}
+
+#seeyou {
+  color: #d5ad39;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 2em 0;
+  margin-left: 5.5em;
+  border-bottom: 3px solid #0c2f44;
 }
 
 /*------------------------------*\ 
@@ -454,7 +468,7 @@ p {
 
   #trianglebackground {
     position: relative;
-    background: url(images/triangles_mobile.png);
+    background: url(images/triangles_mobile_yellow.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;

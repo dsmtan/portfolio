@@ -1,33 +1,68 @@
 "use strict";
 
-// --- NAVIGATION --- //
+window.onload = function() {
+  init();
+  setDefaultExpl();
+};
+
+const indexSection = document.querySelector("#indexSection");
+const pfSection = document.querySelector("#portfolioSection");
+const aboutSection = document.querySelector("#aboutSection");
+
+// --- MOBILE NAVIGATION --- //
 const menuBtn = document.querySelector("#burgermenu");
 const closeBtn = document.querySelector(".closebtn");
 const mobileNav = document.querySelector("#mobilenav");
 
-menuBtn.addEventListener("click", openNav);
-closeBtn.addEventListener("click", closeNav);
+function init() {
+  menuBtn.addEventListener("click", openNav);
+  closeBtn.addEventListener("click", closeNav);
+  document.addEventListener(
+    "click",
+    function(event) {
+      if (event.target.classList.contains("droplink")) {
+        droplinkClicked(event);
+      }
+    },
+    false
+  );
+}
+
+function droplinkClicked(event) {
+  event.preventDefault();
+  if (event.target.id === "homelink") {
+    indexSection.scrollIntoView();
+  } else if (event.target.id === "pflink") {
+    pfSection.scrollIntoView();
+  } else if (event.target.id === "aboutlink") {
+    aboutSection.scrollIntoView();
+  }
+
+  closeNav();
+}
 
 function openNav() {
   mobileNav.style.height = "100%";
+  mobileNav.style.WebkitTransition = "0.4s";
 }
 
 function closeNav() {
   mobileNav.style.height = "0%";
+  mobileNav.style.WebkitTransition = "0.2s";
 }
 
 // --- PORTFOLIO SECTION --- //
 // in mobile: pf and about content appear on dropdown click or header click
 
-const pfHeader = document.querySelector("#pftext");
-const pfWrapper = document.querySelector("#pfwrapper");
+// const pfHeader = document.querySelector("#pftext");
+// const pfWrapper = document.querySelector("#pfwrapper");
 
-pfHeader.addEventListener("click", togglePortfolio);
+// pfHeader.addEventListener("click", togglePortfolio);
 
-function togglePortfolio() {
-  let newHeight = pfWrapper.style.height === "auto" ? "0%" : "auto";
-  pfWrapper.style.height = newHeight;
-}
+// function togglePortfolio() {
+//   let newHeight = pfWrapper.style.height === "auto" ? "0%" : "auto";
+//   pfWrapper.style.height = newHeight;
+// }
 
 // --- ABOUT SECTION ---//
 
@@ -56,11 +91,15 @@ const businessIcon = document.querySelector("#businessicon");
 const codeIcon = document.querySelector("#codeicon");
 const explainHeader = document.querySelector("#explheader");
 const explainText = document.querySelector("#explanation");
+let counter;
 
 //default value users
-let counter = explanations[0].id;
-explainHeader.textContent = explanations[0].header;
-explainText.innerHTML = explanations[0].text;
+function setDefaultExpl() {
+  counter = explanations[0].id;
+  explainHeader.textContent = explanations[0].header;
+  explainText.innerHTML = explanations[0].text;
+  loadNext(counter);
+}
 
 usersIcon.addEventListener("click", showExplanation);
 businessIcon.addEventListener("click", showExplanation);
@@ -102,5 +141,3 @@ function loadNext(newCounter) {
     showExplanation(newCounter);
   });
 }
-
-loadNext(counter);
