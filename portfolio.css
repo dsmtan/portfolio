@@ -22,6 +22,7 @@ body {
   height: 100%;
   margin: 0;
   color: #0c2f44;
+  font-family: "brandon-grotesque", sans-serif;
 }
 
 /*---------------------------*\ 
@@ -30,9 +31,9 @@ body {
 
 #burgermenu {
   float: right;
-  height: 20px;
+  height: 21px;
   margin-right: 5px;
-  margin-top: 12px;
+  margin-top: 16px;
   cursor: pointer;
 }
 
@@ -58,7 +59,7 @@ body {
 
 .overlay a {
   display: block;
-  font-family: "brandon-grotesque", sans-serif;
+
   font-weight: 300;
   font-size: 2.5em;
   padding: 0.5em;
@@ -95,7 +96,6 @@ body {
 #sidenav > button {
   background-color: transparent;
   border: none;
-  font-family: "brandon-grotesque", sans-serif;
   padding: 1.2em 1.5em;
   margin: 1em;
   margin-top: 10px;
@@ -126,21 +126,21 @@ button > a {
 
 #nameheader {
   position: relative;
-  padding-top: 1.2em;
+  padding-top: 2em;
   margin-left: 5.5em;
   border-bottom: 3px solid #0c2f44;
   z-index: 3;
 }
 
 .headertext {
-  font-family: "brandon-grotesque", sans-serif;
-  font-size: 1.9em;
+  font-size: 2em;
   font-weight: 300;
   margin: 0;
   text-transform: uppercase;
 }
 
 #nametext {
+  font-size: 2.3em;
   margin-left: -14px;
   padding: 3px 10px;
 }
@@ -149,13 +149,13 @@ button > a {
   position: absolute;
   background: url(images/testlines.png);
   height: 75vh;
-  max-height: 28.2em;
+  max-height: 32em;
   width: 100%;
   top: 2.8em;
   left: 0;
   background-size: auto 100%;
   background-repeat: no-repeat;
-  background-position: -215px;
+  background-position: -220px;
   z-index: 0;
 }
 
@@ -168,7 +168,7 @@ button > a {
   min-height: 75%;
   width: 100%;
   float: left;
-  top: 6.3em;
+  top: 7.7em;
   left: -4.8em;
   z-index: 1;
 }
@@ -182,7 +182,7 @@ div#introblock {
   height: auto;
   width: 82%;
   padding: 12px;
-  top: 3em;
+  top: 5em;
   right: 0.7em;
   z-index: 5;
 }
@@ -232,10 +232,10 @@ div#introblock {
   background-color: #c4d5e0;
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: top;
   justify-content: center;
   padding: 1em;
-  height: 40vh;
+  height: 45vh;
   cursor: pointer;
 }
 
@@ -244,24 +244,28 @@ div#introblock {
   height: auto;
   width: auto;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 75%;
+}
+
+#pf5 > img {
+  max-height: 70%;
 }
 
 .titlelayer {
   position: absolute;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  min-height: 25%;
   width: 100%;
-  opacity: 0;
-  background-color: #0c2f44;
+  opacity: 1;
+  background-color: #ffffff7c;
 }
 
 .projecttitle {
-  font-family: "brandon-grotesque", sans-serif;
-  font-size: 2.5em;
-  color: #d5ad39;
+  font-size: 1.4em;
+  color: #0c2f44;
   margin: 0.5em;
 }
 
@@ -292,7 +296,6 @@ div#introblock {
 }
 
 p {
-  font-family: "brandon-grotesque", sans-serif;
   font-size: 1.1em;
   font-weight: 300;
   color: #0c2f44;
@@ -306,7 +309,7 @@ p {
 
 #profileimg {
   height: 360px;
-  width: 95%;
+  width: 94%;
   margin: 0 auto;
   background-image: url(images/aboutprofile_pink.png);
   background-size: contain;
@@ -324,7 +327,6 @@ p {
 
 #profilelinks > a {
   display: inline;
-  font-family: "brandon-grotesque", sans-serif;
   font-size: 1.2em;
   font-weight: 500;
   color: #0c2f44;
@@ -344,7 +346,7 @@ p {
   font-style: italic;
   font-weight: 500;
   text-align: left;
-  margin-top: 1.5em;
+  margin-top: 1.3em;
   margin-bottom: 0.5em;
 }
 
@@ -384,7 +386,6 @@ p {
 }
 
 #iconwrapper > h5 {
-  font-family: "brandon-grotesque", sans-serif;
   font-size: 0.6em;
   font-weight: 500;
   text-transform: uppercase;
@@ -392,7 +393,6 @@ p {
 }
 
 #understanding > h4 {
-  font-family: "brandon-grotesque", sans-serif;
   font-size: 1.1em;
   font-weight: 500;
   text-transform: uppercase;
@@ -408,12 +408,12 @@ p {
   color: #d5ad39;
   font-size: 1.5em;
   font-weight: 400;
-  margin: 2em 0;
+  margin: 2.3em 0;
   margin-left: 5.5em;
   border-bottom: 3px solid #0c2f44;
 }
 
-#uparrow {
+.uparrow {
   float: right;
   margin-right: 0.8em;
   margin-top: 10px;
@@ -619,14 +619,41 @@ p {
   }
 
   .pfwrapper > article {
+    background-color: #c4d5e0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: 25vh;
     height: auto;
     padding: 1.5em;
+    cursor: pointer;
   }
 
   .pfwrapper > article > img {
+    object-fit: contain;
+    height: auto;
+    width: auto;
+    max-width: 100%;
     max-height: 100%;
     opacity: 0.95;
+  }
+
+  .titlelayer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: #0c2f44;
+  }
+
+  .projecttitle {
+    font-size: 2.5em;
+    color: #d5ad39;
+    margin: 0.5em;
   }
 
   .titlelayer:hover {
@@ -648,10 +675,3 @@ p {
     font-size: 2.4em;
   }
 }
-
-/* .hide {
-  max-height: 0;
-  overflow: hidden;
-  margin-top: 0;
-  margin-bottom: 0;
-} */

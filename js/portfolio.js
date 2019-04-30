@@ -13,7 +13,6 @@ const aboutSection = document.querySelector("#aboutSection");
 const menuBtn = document.querySelector("#burgermenu");
 const closeBtn = document.querySelector(".closebtn");
 const mobileNav = document.querySelector("#mobilenav");
-const upArrow = document.querySelector("#uparrow");
 
 function mobileInit() {
   menuBtn.addEventListener("click", openNav);
@@ -23,14 +22,12 @@ function mobileInit() {
     function(event) {
       if (event.target.classList.contains("droplink")) {
         droplinkClicked(event);
+      } else if (event.target.classList.contains("uparrow")) {
+        gotoTop();
       }
     },
     false
   );
-
-  upArrow.addEventListener("click", () => {
-    indexSection.scrollIntoView();
-  });
 }
 
 function droplinkClicked(event) {
@@ -55,27 +52,11 @@ function closeNav() {
   mobileNav.style.WebkitTransition = "0.2s";
 }
 
+function gotoTop() {
+  indexSection.scrollIntoView();
+}
+
 // --- PORTFOLIO SECTION --- //
-// in mobile: pf and about content appear on dropdown click or header click
-
-// const pfHeader = document.querySelector("#pfheader");
-// const pfWrapper = document.querySelector(".pfwrapper");
-// const aboutHeader = document.querySelector("#aboutheader");
-// const aboutWrapper = document.querySelector(".aboutwrapper");
-
-// pfHeader.addEventListener("click", toggleDisplay);
-// aboutHeader.addEventListener("click", toggleDisplay);
-
-// function toggleDisplay() {
-//   console.log(this);
-//   if (this.id === "pfheader") {
-//     pfWrapper.classList.toggle("hide");
-//     pfSection.scrollIntoView();
-//   } else if (this.id === "aboutheader") {
-//     aboutWrapper.classList.toggle("hide");
-//     aboutSection.scrollIntoView();
-//   }
-// }
 
 // --- ABOUT SECTION ---//
 
