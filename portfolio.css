@@ -219,7 +219,7 @@ div#introblock {
   margin-right: -2px;
 }
 
-#pfwrapper {
+.pfwrapper {
   height: auto;
   width: 80%;
   margin: 1em auto;
@@ -228,9 +228,11 @@ div#introblock {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-gap: 18px;
+  max-height: 100%;
+  transition: all 1s ease;
 }
 
-#pfwrapper > article {
+.pfwrapper > article {
   background-color: #c4d5e0;
   position: relative;
   display: flex;
@@ -241,7 +243,7 @@ div#introblock {
   cursor: pointer;
 }
 
-#pfwrapper > article > img {
+.pfwrapper > article > img {
   object-fit: contain;
   height: auto;
   width: auto;
@@ -272,7 +274,6 @@ div#introblock {
 \*------------------------------*/
 
 #aboutSection {
-  margin-top: 5.8em;
   padding-top: 1.2em;
 }
 #aboutheader {
@@ -284,6 +285,14 @@ div#introblock {
 #abouttext {
   color: #0c2f44;
   margin-right: -2px;
+}
+
+.aboutwrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1em;
+  transition: max-height 0.3s ease-out;
 }
 
 p {
@@ -339,6 +348,7 @@ p {
   font-style: italic;
   font-weight: 500;
   text-align: left;
+  margin-top: 1.5em;
   margin-bottom: 0.5em;
 }
 
@@ -405,6 +415,17 @@ p {
   margin: 2em 0;
   margin-left: 5.5em;
   border-bottom: 3px solid #0c2f44;
+}
+
+#uparrow {
+  float: right;
+  margin-right: 0.8em;
+  margin-top: 10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 11px 20px 11px;
+  border-color: transparent transparent #c4d5e0 transparent;
 }
 
 /*------------------------------*\ 
@@ -569,7 +590,7 @@ p {
     color: #d5ad39;
   }
 
-  #pfwrapper {
+  .pfwrapper {
     height: 700px;
     width: 60vw;
     min-width: 900px;
@@ -598,13 +619,13 @@ p {
     grid-area: 2 / 3 / 3 / span 2;
   }
 
-  #pfwrapper > article {
+  .pfwrapper > article {
     min-height: 25vh;
     height: auto;
     padding: 1.5em;
   }
 
-  #pfwrapper > article > img {
+  .pfwrapper > article > img {
     max-height: 100%;
     opacity: 0.95;
   }
@@ -627,4 +648,11 @@ p {
   #introtext {
     font-size: 2.4em;
   }
+}
+
+.hide {
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 0;
+  margin-bottom: 0;
 }

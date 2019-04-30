@@ -1,7 +1,7 @@
 "use strict";
 
 window.onload = function() {
-  init();
+  mobileInit();
   setDefaultExpl();
 };
 
@@ -13,8 +13,9 @@ const aboutSection = document.querySelector("#aboutSection");
 const menuBtn = document.querySelector("#burgermenu");
 const closeBtn = document.querySelector(".closebtn");
 const mobileNav = document.querySelector("#mobilenav");
+const upArrow = document.querySelector("#uparrow");
 
-function init() {
+function mobileInit() {
   menuBtn.addEventListener("click", openNav);
   closeBtn.addEventListener("click", closeNav);
   document.addEventListener(
@@ -26,6 +27,10 @@ function init() {
     },
     false
   );
+
+  upArrow.addEventListener("click", () => {
+    indexSection.scrollIntoView();
+  });
 }
 
 function droplinkClicked(event) {
@@ -37,7 +42,6 @@ function droplinkClicked(event) {
   } else if (event.target.id === "aboutlink") {
     aboutSection.scrollIntoView();
   }
-
   closeNav();
 }
 
@@ -54,15 +58,24 @@ function closeNav() {
 // --- PORTFOLIO SECTION --- //
 // in mobile: pf and about content appear on dropdown click or header click
 
-// const pfHeader = document.querySelector("#pftext");
-// const pfWrapper = document.querySelector("#pfwrapper");
+const pfHeader = document.querySelector("#pfheader");
+const pfWrapper = document.querySelector(".pfwrapper");
+const aboutHeader = document.querySelector("#aboutheader");
+const aboutWrapper = document.querySelector(".aboutwrapper");
 
-// pfHeader.addEventListener("click", togglePortfolio);
+pfHeader.addEventListener("click", toggleDisplay);
+aboutHeader.addEventListener("click", toggleDisplay);
 
-// function togglePortfolio() {
-//   let newHeight = pfWrapper.style.height === "auto" ? "0%" : "auto";
-//   pfWrapper.style.height = newHeight;
-// }
+function toggleDisplay() {
+  console.log(this);
+  if (this.id === "pfheader") {
+    pfWrapper.classList.toggle("hide");
+    pfSection.scrollIntoView();
+  } else if (this.id === "aboutheader") {
+    aboutWrapper.classList.toggle("hide");
+    aboutSection.scrollIntoView();
+  }
+}
 
 // --- ABOUT SECTION ---//
 
