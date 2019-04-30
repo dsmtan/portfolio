@@ -121,7 +121,6 @@ button > a {
 
 #indexSection {
   height: 80vh;
-  max-height: 31.9em;
   margin: 0;
 }
 
@@ -204,7 +203,7 @@ div#introblock {
 \*------------------------------*/
 
 #portfolioSection {
-  padding-top: 1.2em;
+  padding-top: 1.8em;
 }
 
 #pfheader {
@@ -215,7 +214,6 @@ div#introblock {
 
 #pftext {
   color: #0c2f44;
-  font-size: 1.8em;
   margin-right: -2px;
 }
 
@@ -223,13 +221,11 @@ div#introblock {
   height: auto;
   width: 80%;
   margin: 1em auto;
-  margin-top: 4em;
+  margin-top: 5em;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-gap: 18px;
-  max-height: 100%;
-  transition: all 1s ease;
 }
 
 .pfwrapper > article {
@@ -274,6 +270,7 @@ div#introblock {
 \*------------------------------*/
 
 #aboutSection {
+  margin-top: 5em;
   padding-top: 1.2em;
 }
 #aboutheader {
@@ -292,7 +289,6 @@ div#introblock {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-gap: 1em;
-  transition: max-height 0.3s ease-out;
 }
 
 p {
@@ -469,6 +465,10 @@ p {
 /*-------------- #TABLET SIZE PAGE CONTENT ---------------*/
 
 @media screen and (min-width: 600px) {
+  .headertext {
+    font-size: 2.4em;
+  }
+
   #indexSection {
     height: 100vh;
   }
@@ -476,8 +476,7 @@ p {
   #indexbackground {
     position: absolute;
     background: url(images/testlines.png);
-    height: 140vw;
-    max-height: 70%;
+    height: 100%;
     width: 100%;
     top: 40px;
     left: 0;
@@ -650,9 +649,9 @@ p {
   }
 }
 
-.hide {
+/* .hide {
   max-height: 0;
   overflow: hidden;
   margin-top: 0;
   margin-bottom: 0;
-}
+} */

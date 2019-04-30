@@ -58,24 +58,24 @@ function closeNav() {
 // --- PORTFOLIO SECTION --- //
 // in mobile: pf and about content appear on dropdown click or header click
 
-const pfHeader = document.querySelector("#pfheader");
-const pfWrapper = document.querySelector(".pfwrapper");
-const aboutHeader = document.querySelector("#aboutheader");
-const aboutWrapper = document.querySelector(".aboutwrapper");
+// const pfHeader = document.querySelector("#pfheader");
+// const pfWrapper = document.querySelector(".pfwrapper");
+// const aboutHeader = document.querySelector("#aboutheader");
+// const aboutWrapper = document.querySelector(".aboutwrapper");
 
-pfHeader.addEventListener("click", toggleDisplay);
-aboutHeader.addEventListener("click", toggleDisplay);
+// pfHeader.addEventListener("click", toggleDisplay);
+// aboutHeader.addEventListener("click", toggleDisplay);
 
-function toggleDisplay() {
-  console.log(this);
-  if (this.id === "pfheader") {
-    pfWrapper.classList.toggle("hide");
-    pfSection.scrollIntoView();
-  } else if (this.id === "aboutheader") {
-    aboutWrapper.classList.toggle("hide");
-    aboutSection.scrollIntoView();
-  }
-}
+// function toggleDisplay() {
+//   console.log(this);
+//   if (this.id === "pfheader") {
+//     pfWrapper.classList.toggle("hide");
+//     pfSection.scrollIntoView();
+//   } else if (this.id === "aboutheader") {
+//     aboutWrapper.classList.toggle("hide");
+//     aboutSection.scrollIntoView();
+//   }
+// }
 
 // --- ABOUT SECTION ---//
 
