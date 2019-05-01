@@ -6,15 +6,15 @@
   margin-top: 5em;
   padding-top: 1.2em;
 }
+
 #aboutheader {
   margin-right: 27%;
   border-bottom: 3px solid $yellow;
   text-align: right;
-}
 
-#abouttext {
-  color: $darkblue;
-  margin-right: -2px;
+  h2 {
+    margin-right: -2px;
+  }
 }
 
 .aboutwrapper {
@@ -27,7 +27,6 @@
 p {
   font-size: 1.1em;
   font-weight: 300;
-  color: $darkblue;
   text-align: justify;
   margin: 0;
 }
@@ -40,7 +39,7 @@ p {
   height: 360px;
   width: 94%;
   margin: 0 auto;
-  background-image: url(images/aboutprofile_pink.png);
+  background-image: url(../images/aboutprofile_pink.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -94,11 +93,9 @@ p {
   height: 65px;
   width: 65px;
   cursor: pointer;
-  background-color: #c4d5e0;
+  background-color: $bluegrey;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexCenter();
 }
 
 .icons:focus {

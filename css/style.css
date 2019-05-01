@@ -1,4 +1,18 @@
 @import url("https://use.typekit.net/wxs3hfe.css");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  color: #0c2f44;
+  font-family: "brandon-grotesque", sans-serif;
+}
+
 /*---------------------------*\ 
        #NAVIGATION MOBILE
   \*---------------------------*/
@@ -10,7 +24,7 @@
   cursor: pointer;
 }
 
-.overlay {
+#mobilenav {
   height: 0%;
   width: 100%;
   position: fixed;
@@ -23,7 +37,7 @@
   transition: 0.5s;
 }
 
-.overlay-content {
+#mobilenav .overlay-content {
   position: relative;
   top: 15%;
   width: 100%;
@@ -31,7 +45,7 @@
   margin-top: 30px;
 }
 
-.overlay a {
+#mobilenav a {
   display: block;
   font-weight: 300;
   font-size: 2.5em;
@@ -41,7 +55,7 @@
   cursor: pointer;
 }
 
-.overlay .closebtn {
+#mobilenav .closebtn {
   position: absolute;
   top: -20px;
   right: 10px;
@@ -68,6 +82,7 @@
 }
 
 #sidenav > button {
+  font-family: "brandon-grotesque", sans-serif;
   background-color: transparent;
   border: none;
   padding: 1.2em 1.5em;
@@ -89,22 +104,36 @@ button > a {
   right: 4%;
 }
 
+@media screen and (min-height: 550px) and (min-width: 960px) {
+  #burgermenu {
+    display: none;
+  }
+  #mobilenav {
+    display: none;
+  }
+  #sidenav {
+    display: block;
+  }
+  #profileimg {
+    background-image: url(../images/aboutprofile.png);
+  }
+}
+
+@media screen and (min-height: 690px) {
+  #sidenav > button {
+    padding: 1.2em 2.5em;
+  }
+  button > a {
+    font-size: 2.1em;
+  }
+  #navarrow {
+    height: 30px;
+  }
+}
+
 /*----------------------------------*\ 
       #INDEX GRAPHICS SECTION MOBILE
 \*----------------------------------*/
-#indexSection {
-  height: 80vh;
-  margin: 0;
-}
-
-#nameheader {
-  position: relative;
-  padding-top: 2em;
-  margin-left: 5.5em;
-  border-bottom: 3px solid #0c2f44;
-  z-index: 3;
-}
-
 .headertext {
   font-size: 2em;
   font-weight: 300;
@@ -112,7 +141,20 @@ button > a {
   text-transform: uppercase;
 }
 
-#nametext {
+#indexSection {
+  height: 80vh;
+  margin: 0;
+}
+
+#indexSection #nameheader {
+  position: relative;
+  padding-top: 2em;
+  margin-left: 5.5em;
+  border-bottom: 3px solid #0c2f44;
+  z-index: 3;
+}
+
+#indexSection #nameheader h1 {
   font-size: 2.3em;
   margin-left: -14px;
   padding: 3px 10px;
@@ -146,11 +188,11 @@ button > a {
   z-index: 1;
 }
 
-#trianglebackground > svg {
+#trianglebackground svg {
   display: none;
 }
 
-div#introblock {
+#introblock {
   position: absolute;
   height: auto;
   width: 82%;
@@ -160,7 +202,7 @@ div#introblock {
   z-index: 5;
 }
 
-#introtext {
+#introblock #introtext {
   position: relative;
   margin: 0;
   font-size: 1.4em;
@@ -184,7 +226,7 @@ div#introblock {
   text-align: right;
 }
 
-#pftext {
+#pfheader h2 {
   color: #0c2f44;
   margin-right: -2px;
 }
@@ -203,7 +245,7 @@ div#introblock {
   grid-gap: 2em;
 }
 
-.pfwrapper > article {
+article {
   background-color: #c4d5e0;
   position: relative;
   display: -webkit-box;
@@ -220,7 +262,7 @@ div#introblock {
   cursor: pointer;
 }
 
-.pfwrapper > article > img {
+article img {
   -o-object-fit: contain;
      object-fit: contain;
   height: auto;
@@ -238,24 +280,24 @@ div#introblock {
 }
 
 .titlelayer {
-  position: absolute;
-  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 0;
   min-height: 25%;
   width: 100%;
   opacity: 1;
   background-color: #ffffff7c;
 }
 
-.projecttitle {
+.titlelayer .projecttitle {
   font-size: 1.4em;
   color: #0c2f44;
   margin: 0.5em;
@@ -275,8 +317,7 @@ div#introblock {
   text-align: right;
 }
 
-#abouttext {
-  color: #0c2f44;
+#aboutheader h2 {
   margin-right: -2px;
 }
 
@@ -293,7 +334,6 @@ div#introblock {
 p {
   font-size: 1.1em;
   font-weight: 300;
-  color: #0c2f44;
   text-align: justify;
   margin: 0;
 }
@@ -306,7 +346,7 @@ p {
   height: 360px;
   width: 94%;
   margin: 0 auto;
-  background-image: url(images/aboutprofile_pink.png);
+  background-image: url(../images/aboutprofile_pink.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -430,51 +470,9 @@ p {
   border-color: transparent transparent #c4d5e0 transparent;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-html,
-body {
-  height: 100%;
-  margin: 0;
-  color: #0c2f44;
-  font-family: "brandon-grotesque", sans-serif;
-}
-
 /*------------------------------*\ 
     !!!  #MEDIA QUERIES  !!!
 \*------------------------------*/
-/*----------- NAVIGATION -----------*/
-@media screen and (min-height: 550px) and (min-width: 960px) {
-  #burgermenu {
-    display: none;
-  }
-  #mobilenav {
-    display: none;
-  }
-  #sidenav {
-    display: block;
-  }
-  #profileimg {
-    background-image: url(../images/aboutprofile.png);
-  }
-}
-
-@media screen and (min-height: 690px) {
-  #sidenav > button {
-    padding: 1.2em 2.5em;
-  }
-  button > a {
-    font-size: 2.1em;
-  }
-  #navarrow {
-    height: 30px;
-  }
-}
-
 /*-------------- #TABLET SIZE PAGE CONTENT ---------------*/
 @media screen and (min-width: 600px) {
   .headertext {
@@ -513,6 +511,9 @@ body {
 
 /*----------- #SMALL DESKTOP SIZE PAGE CONTENT -----------*/
 @media screen and (min-width: 1100px) {
+  .headertext {
+    font-size: 3.9em;
+  }
   section {
     display: block;
     height: 100vh;
@@ -521,15 +522,15 @@ body {
   #indexSection {
     height: 100vh;
   }
-  /* >> INDEX SECTION 1150px */
-  #nameheader {
+  #indexSection #nameheader {
     margin-left: 36%;
     margin-top: 12vh;
     border-bottom: 4px solid #0c2f44;
   }
-  .headertext {
+  #indexSection #nameheader h1 {
     font-size: 3.9em;
   }
+  /* >> INDEX SECTION 1100px */
   #indexbackground {
     height: 100vh;
     max-height: none;
@@ -548,7 +549,7 @@ body {
     opacity: 1;
     text-align: right;
   }
-  #trianglebackground > svg {
+  #trianglebackground svg {
     display: inline;
     position: relative;
     -o-object-fit: cover;
@@ -560,7 +561,7 @@ body {
     max-width: 100%;
     max-height: 100%;
   }
-  div#introblock {
+  #introblock {
     width: 45vw;
     max-width: 755px;
     padding: 35px 30px;
@@ -570,13 +571,13 @@ body {
     top: 40vh;
     left: calc(48vw - 58px);
   }
-  #introtext {
+  #introblock #introtext {
     margin-left: 18px;
     font-size: 2em;
     -webkit-transform: skew(16deg);
             transform: skew(16deg);
   }
-  /* >> PORTFOLIO SECTION 1150px */
+  /* >> PORTFOLIO SECTION 1100px */
   #portfolioSection {
     margin-top: 2em;
   }
@@ -584,7 +585,7 @@ body {
     margin-right: 60%;
     border-bottom: 4px solid #0c2f44;
   }
-  #pftext {
+  #pfheader h2 {
     margin-right: -5px;
     color: #d5ad39;
   }
@@ -631,8 +632,6 @@ body {
     grid-area: 2 / 3 / 3 / span 2;
   }
   .pfwrapper > article {
-    background-color: #c4d5e0;
-    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -642,6 +641,8 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    background-color: #c4d5e0;
+    position: relative;
     min-height: 25vh;
     height: auto;
     padding: 1.5em;
@@ -656,33 +657,39 @@ body {
     max-height: 100%;
     opacity: 0.95;
   }
+  #pf1 > img {
+    max-height: 100%;
+  }
+  #pf5 > img {
+    max-height: 100%;
+  }
   .titlelayer {
-    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
     height: 100%;
     width: 100%;
     opacity: 0;
     background-color: #0c2f44;
-  }
-  .projecttitle {
-    font-size: 2.5em;
-    color: #d5ad39;
-    margin: 0.5em;
   }
   .titlelayer:hover {
     -webkit-transition: 0.4s ease;
     transition: 0.4s ease;
     opacity: 0.95;
   }
-  /* >> ABOUT SECTION 1150px */
+  .titlelayer .projecttitle {
+    font-size: 2.5em;
+    color: #d5ad39;
+    margin: 0.5em;
+  }
+  /* >> ABOUT SECTION 1100px */
 }
 
 /*----------- #LARGE DESKTOP SIZE PAGE CONTENT -----------*/

@@ -1,68 +1,14 @@
-$pink: #efbaa7;
-$yellow: #d5ad39;
-$yellow2: #dcbb5b;
-$darkblue: #0c2f44;
-$bluegrey: #c4d5e0;
-
-$mainfont: "brandon-grotesque", sans-serif;
-
 @import url("https://use.typekit.net/wxs3hfe.css");
 
+@import "./variables";
 @import "./navigation";
 @import "./index";
 @import "./portfolio";
 @import "./about";
 
-* {
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-html,
-body {
-  height: 100%;
-  margin: 0;
-  color: $darkblue;
-  font-family: $mainfont;
-}
-
 /*------------------------------*\ 
     !!!  #MEDIA QUERIES  !!!
 \*------------------------------*/
-
-/*----------- NAVIGATION -----------*/
-
-@media screen and (min-height: 550px) and (min-width: 960px) {
-  #burgermenu {
-    display: none;
-  }
-
-  #mobilenav {
-    display: none;
-  }
-
-  #sidenav {
-    display: block;
-  }
-
-  #profileimg {
-    background-image: url(../images/aboutprofile.png);
-  }
-}
-
-@media screen and (min-height: 690px) {
-  #sidenav > button {
-    padding: 1.2em 2.5em;
-  }
-
-  button > a {
-    font-size: 2.1em;
-  }
-
-  #navarrow {
-    height: 30px;
-  }
-}
 
 /*-------------- #TABLET SIZE PAGE CONTENT ---------------*/
 
@@ -107,6 +53,10 @@ body {
 /*----------- #SMALL DESKTOP SIZE PAGE CONTENT -----------*/
 
 @media screen and (min-width: 1100px) {
+  .headertext {
+    font-size: 3.9em;
+  }
+
   section {
     display: block;
     height: 100vh;
@@ -115,18 +65,19 @@ body {
 
   #indexSection {
     height: 100vh;
+
+    #nameheader {
+      margin-left: 36%;
+      margin-top: 12vh;
+      border-bottom: 4px solid $darkblue;
+
+      h1 {
+        font-size: 3.9em;
+      }
+    }
   }
 
-  /* >> INDEX SECTION 1150px */
-  #nameheader {
-    margin-left: 36%;
-    margin-top: 12vh;
-    border-bottom: 4px solid $darkblue;
-  }
-
-  .headertext {
-    font-size: 3.9em;
-  }
+  /* >> INDEX SECTION 1100px */
 
   #indexbackground {
     height: 100vh;
@@ -146,36 +97,36 @@ body {
     left: -40px;
     opacity: 1;
     text-align: right;
+
+    svg {
+      display: inline;
+      position: relative;
+      object-fit: cover;
+      object-position: right;
+      height: 100%;
+      width: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
   }
 
-  #trianglebackground > svg {
-    display: inline;
-    position: relative;
-    object-fit: cover;
-    object-position: right;
-    height: 100%;
-    width: auto;
-    max-width: 100%;
-    max-height: 100%;
-  }
-
-  div#introblock {
+  #introblock {
     width: 45vw;
     max-width: 755px;
     padding: 35px 30px;
-    background-color: #dcbb5b;
+    background-color: $yellow2;
     transform: skew(-16deg);
     top: 40vh;
     left: calc(48vw - 58px);
+
+    #introtext {
+      margin-left: 18px;
+      font-size: 2em;
+      transform: skew(16deg);
+    }
   }
 
-  #introtext {
-    margin-left: 18px;
-    font-size: 2em;
-    transform: skew(16deg);
-  }
-
-  /* >> PORTFOLIO SECTION 1150px */
+  /* >> PORTFOLIO SECTION 1100px */
 
   #portfolioSection {
     margin-top: 2em;
@@ -184,11 +135,11 @@ body {
   #pfheader {
     margin-right: 60%;
     border-bottom: 4px solid $darkblue;
-  }
 
-  #pftext {
-    margin-right: -5px;
-    color: $yellow;
+    h2 {
+      margin-right: -5px;
+      color: $yellow;
+    }
   }
 
   .pfwrapper {
@@ -221,11 +172,9 @@ body {
   }
 
   .pfwrapper > article {
+    @include flexCenter();
     background-color: $bluegrey;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     min-height: 25vh;
     height: auto;
     padding: 1.5em;
@@ -241,29 +190,34 @@ body {
     opacity: 0.95;
   }
 
+  #pf1 > img {
+    max-height: 100%;
+  }
+  #pf5 > img {
+    max-height: 100%;
+  }
+
   .titlelayer {
+    @include flexCenter();
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100%;
     width: 100%;
     opacity: 0;
     background-color: $darkblue;
+
+    &:hover {
+      transition: 0.4s ease;
+      opacity: 0.95;
+    }
+
+    .projecttitle {
+      font-size: 2.5em;
+      color: $yellow;
+      margin: 0.5em;
+    }
   }
 
-  .projecttitle {
-    font-size: 2.5em;
-    color: $yellow;
-    margin: 0.5em;
-  }
-
-  .titlelayer:hover {
-    transition: 0.4s ease;
-    opacity: 0.95;
-  }
-
-  /* >> ABOUT SECTION 1150px */
+  /* >> ABOUT SECTION 1100px */
 }
 
 /*----------- #LARGE DESKTOP SIZE PAGE CONTENT -----------*/

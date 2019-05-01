@@ -1,0 +1,26 @@
+$pink: #efbaa7;
+$yellow: #d5ad39;
+$yellow2: #dcbb5b;
+$darkblue: #0c2f44;
+$bluegrey: #c4d5e0;
+
+$mainfont: "brandon-grotesque", sans-serif;
+
+@mixin flexCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  color: $darkblue;
+  font-family: $mainfont;
+}
