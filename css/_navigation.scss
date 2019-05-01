@@ -1,0 +1,88 @@
+/*---------------------------*\ 
+       #NAVIGATION MOBILE
+  \*---------------------------*/
+
+#burgermenu {
+  float: right;
+  height: 21px;
+  margin-right: 5px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  background-color: rgba(196, 213, 224, 0.96);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  display: block;
+  font-weight: 300;
+  font-size: 2.5em;
+  padding: 0.5em;
+  color: $darkblue;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: -20px;
+  right: 10px;
+  font-size: 4em;
+  padding-right: 10px;
+}
+
+/*-----------------------------------------*\ 
+        #NAVIGATION SIDE + VERTICAL DESKTOP
+\*-----------------------------------------*/
+
+#sidenav {
+  display: none;
+  height: 85px;
+  width: 100vh;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  background: $pink;
+  transform-origin: right top;
+  transform: rotate(90deg) translateX(100%);
+  z-index: 100;
+}
+
+#sidenav > button {
+  background-color: transparent;
+  border: none;
+  padding: 1.2em 1.5em;
+  margin: 1em;
+  margin-top: 10px;
+}
+
+button > a {
+  text-decoration: none;
+  color: $darkblue;
+  font-size: 1.7em;
+  font-weight: 400;
+}
+
+#navarrow {
+  position: absolute;
+  height: 25px;
+  top: calc(50% - 15px);
+  right: 4%;
+}

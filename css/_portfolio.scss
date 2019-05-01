@@ -1,0 +1,73 @@
+/*------------------------------*\ 
+    #PORTFOLIO SECTION MOBILE
+\*------------------------------*/
+
+#portfolioSection {
+  padding-top: 1.8em;
+}
+
+#pfheader {
+  margin-right: 27%;
+  border-bottom: 3px solid $yellow;
+  text-align: right;
+}
+
+#pftext {
+  color: $darkblue;
+  margin-right: -2px;
+}
+
+.pfwrapper {
+  height: auto;
+  width: 80%;
+  margin: 1em auto;
+  margin-top: 5em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 2em;
+}
+
+.pfwrapper > article {
+  background-color: $bluegrey;
+  position: relative;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  padding: 1em;
+  height: 45vh;
+  cursor: pointer;
+}
+
+.pfwrapper > article > img {
+  object-fit: contain;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 75%;
+}
+
+#pf1 > img {
+  max-height: 73%;
+}
+#pf5 > img {
+  max-height: 68%;
+}
+
+.titlelayer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 25%;
+  width: 100%;
+  opacity: 1;
+  background-color: #ffffff7c;
+}
+
+.projecttitle {
+  font-size: 1.4em;
+  color: $darkblue;
+  margin: 0.5em;
+}
