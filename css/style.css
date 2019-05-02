@@ -249,7 +249,7 @@ article img {
 }
 
 #pf5 > img {
-  max-height: 68%;
+  max-height: 70%;
 }
 
 .titlelayer {
@@ -443,34 +443,7 @@ p {
   border-color: transparent transparent #c4d5e0 transparent;
 }
 
-@media (min-height: 550px) and (min-width: 960px) {
-  .burgermenu {
-    display: none;
-  }
-  .nav--mobile {
-    display: none;
-  }
-  .nav--side {
-    display: block;
-  }
-  #profileimg {
-    background-image: url(../images/aboutprofile.png);
-  }
-}
-
-@media (min-height: 690px) {
-  .nav--side > button {
-    padding: 1.2em 2.5em;
-  }
-  button > a {
-    font-size: 2.1em;
-  }
-  .navarrow {
-    height: 30px;
-  }
-}
-
-@media (min-width: 600px) and (orientation: portrait) {
+@media (min-width: 600px) and (max-width: 1100px) and (orientation: portrait) {
   .nav--mobile {
     width: 50%;
     left: auto;
@@ -486,30 +459,15 @@ p {
     margin-left: 35%;
   }
   .div--linesbackground {
-    position: absolute;
-    background: url(../images/testlines.png);
+    max-height: 50vh;
     height: 100%;
-    width: 100%;
     top: 40px;
-    left: 0;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
     background-position: -220px;
-    z-index: 0;
   }
   .div--trianglebackground {
-    position: relative;
-    background: url(../images/triangles_mobile_yellow.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
-    min-height: 75%;
-    width: 100%;
-    float: left;
     top: 4vh;
-    left: -70px;
+    left: -75px;
     opacity: 0.9;
-    z-index: 1;
   }
   .div--introblock {
     width: 50vw;
@@ -532,7 +490,10 @@ p {
         grid-template-columns: 1fr 1fr;
   }
   article {
-    height: 25vh;
+    height: 30vh;
+  }
+  .titlelayer {
+    max-height: 4.5em;
   }
   .grid--aboutwrapper {
     -ms-grid-columns: 1fr 1fr;
@@ -564,14 +525,25 @@ p {
     margin: 0 auto;
   }
   .div--understanding h3 {
-    margin-top: 1.5em;
+    margin-top: 1em;
     text-align: center;
   }
   .div--understanding h4 {
     margin-top: 2em;
   }
+  .div--understanding .gridbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .div--understanding .grid--iconwrapper {
-    width: 54%;
+    width: auto;
     text-align: center;
     margin: 0 auto;
   }
@@ -584,13 +556,195 @@ p {
   }
 }
 
-@media (min-width: 600px) and (orientation: landscape) {
+@media (min-width: 900px) and (orientation: landscape) {
+  .burgermenu {
+    display: none;
+  }
+  .nav--mobile {
+    display: none;
+  }
+  .nav--side {
+    display: block;
+  }
+  #profileimg {
+    background-image: url(../images/aboutprofile.png);
+  }
   .headertext {
-    font-size: 3.9em;
+    font-size: 3.2em;
   }
   section {
     display: block;
+    min-height: 100vh;
+    margin: 0;
+  }
+  .section--index {
     height: 100vh;
+  }
+  .section--index .header--name {
+    margin-left: 36%;
+    margin-top: 12vh;
+    border-bottom: 4px solid #0c2f44;
+  }
+  .section--index .header--name h1 {
+    font-size: 3.9em;
+  }
+  .div--linesbackground {
+    height: 100vh;
+    max-height: none;
+    top: 0;
+    background-size: auto 91%;
+    background-position: -240px 25px;
+  }
+  .div--trianglebackground {
+    background: none;
+    display: block;
+    height: 83vh;
+    min-height: none;
+    width: 48vw;
+    top: 3.5vh;
+    left: -40px;
+    opacity: 1;
+    text-align: right;
+  }
+  .div--trianglebackground svg {
+    display: inline;
+    position: relative;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: right;
+       object-position: right;
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .div--introblock {
+    width: 45vw;
+    max-width: 755px;
+    padding: 35px 30px;
+    background-color: #dcbb5b;
+    -webkit-transform: skew(-16deg);
+            transform: skew(-16deg);
+    top: 40vh;
+    left: calc(48vw - 58px);
+  }
+  .div--introblock h3 {
+    margin-left: 18px;
+    font-size: 2em;
+    -webkit-transform: skew(16deg);
+            transform: skew(16deg);
+  }
+  .grid--pfwrapper {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  article {
+    height: 30vh;
+  }
+  .titlelayer {
+    max-height: 4.5em;
+  }
+  p {
+    font-size: 1.4em;
+  }
+  .header--about {
+    margin-right: auto;
+    margin-left: 27%;
+    border-bottom: 3px solid #d5ad39;
+    text-align: left;
+  }
+  .header--about h2 {
+    margin-right: -2px;
+  }
+  .grid--aboutwrapper {
+    -ms-grid-columns: 1fr 1.2fr;
+        grid-template-columns: 1fr 1.2fr;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+    grid-gap: 0 2.5em;
+    margin: 0 auto;
+    margin-top: 3.5em;
+    width: 90vw;
+  }
+  .aboutintro {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: 1 / 2;
+    margin: 1.5em 3em auto 0;
+  }
+  .div--profilebg {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: 1 / 1 / span 2;
+    width: 100%;
+    height: auto;
+    background-image: url(../images/aboutprofile.png);
+    background-position: center 0px;
+    margin-top: 3em;
+  }
+  .profilelinks a {
+    font-size: 1.5em;
+  }
+  .div--understanding {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: 2 / 2;
+    width: auto;
+    margin: 0 3em auto 0;
+  }
+  .div--understanding h3 {
+    margin-top: 1.3em;
+    font-size: 2.7em;
+  }
+  .div--understanding h4 {
+    margin-top: 2em;
+    font-size: 1.4em;
+  }
+  .div--understanding .grid--iconwrapper {
+    -ms-grid-columns: 85px 95px 85px;
+        grid-template-columns: 85px 95px 85px;
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+    -webkit-column-gap: 2em;
+            column-gap: 2em;
+  }
+  .div--understanding .grid--iconwrapper h5 {
+    font-size: 0.75em;
+  }
+  .icons {
+    height: 75px;
+    width: 75px;
+  }
+  .seeyou {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: 3/ 2;
+    margin-left: 0;
+    font-size: 1.7em;
+  }
+}
+
+@media (min-width: 1100px) and (orientation: landscape) and (hover: hover) {
+  .burgermenu {
+    display: none;
+  }
+  .nav--mobile {
+    display: none;
+  }
+  .nav--side {
+    display: block;
+  }
+  #profileimg {
+    background-image: url(../images/aboutprofile.png);
+  }
+  .headertext {
+    font-size: 3.2em;
+  }
+  section {
+    display: block;
+    min-height: 100vh;
     margin: 0;
   }
   .section--index {
@@ -664,7 +818,7 @@ p {
   .grid--pfwrapper {
     height: 700px;
     width: 60vw;
-    min-width: 900px;
+    min-width: 750px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 0.3fr 1fr;
@@ -761,11 +915,103 @@ p {
     color: #d5ad39;
     margin: 0.5em;
   }
+  p {
+    font-size: 1.4em;
+  }
+  .header--about {
+    margin-right: auto;
+    margin-left: 27%;
+    border-bottom: 3px solid #d5ad39;
+    text-align: left;
+  }
+  .header--about h2 {
+    margin-right: -2px;
+  }
+  .grid--aboutwrapper {
+    -ms-grid-columns: 1fr 1.2fr;
+        grid-template-columns: 1fr 1.2fr;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+    grid-gap: 0 2.5em;
+    margin: 0 auto;
+    margin-top: 3.5em;
+    width: 90vw;
+  }
+  .aboutintro {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: 1 / 2;
+    margin: 1.5em 3em auto 0;
+  }
+  .div--profilebg {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: 1 / 1 / span 2;
+    width: 100%;
+    height: auto;
+    background-image: url(../images/aboutprofile.png);
+    background-position: center 0px;
+    margin-top: 3em;
+  }
+  .profilelinks a {
+    font-size: 1.5em;
+  }
+  .div--understanding {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: 2 / 2;
+    width: auto;
+    margin: 0 3em auto 0;
+  }
+  .div--understanding h3 {
+    margin-top: 1.3em;
+    font-size: 2.7em;
+  }
+  .div--understanding h4 {
+    margin-top: 2em;
+    font-size: 1.4em;
+  }
+  .div--understanding .grid--iconwrapper {
+    -ms-grid-columns: 85px 95px 85px;
+        grid-template-columns: 85px 95px 85px;
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+    -webkit-column-gap: 2em;
+            column-gap: 2em;
+  }
+  .div--understanding .grid--iconwrapper h5 {
+    font-size: 0.75em;
+  }
+  .icons {
+    height: 75px;
+    width: 75px;
+  }
+  .seeyou {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: 3/ 2;
+    margin-left: 0;
+    font-size: 1.7em;
+  }
+}
+
+@media (min-height: 750px) and (orientation: landscape) {
+  .nav--side > button {
+    padding: 1.2em 2.5em;
+  }
+  button > a {
+    font-size: 2.1em;
+  }
+  .navarrow {
+    height: 30px;
+  }
 }
 
 @media (min-width: 1550px) {
   .headertext {
-    font-size: 5em;
+    font-size: 4em;
   }
   .div--introblock h3 {
     font-size: 2.4em;

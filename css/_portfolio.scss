@@ -51,7 +51,7 @@ article {
   max-height: 73%;
 }
 #pf5 > img {
-  max-height: 68%;
+  max-height: 70%;
 }
 
 .titlelayer {
@@ -70,7 +70,7 @@ article {
   }
 }
 
-//--- BREAKPOINT width 600px - 1100px
+//--- BREAKPOINT width 600px
 
 @mixin portfolio--tablet {
   .grid--pfwrapper {
@@ -78,7 +78,11 @@ article {
   }
 
   article {
-    height: 25vh;
+    height: 30vh;
+  }
+
+  .titlelayer {
+    max-height: 4.5em;
   }
 }
 
@@ -102,7 +106,7 @@ article {
   .grid--pfwrapper {
     height: 700px;
     width: 60vw;
-    min-width: 900px;
+    min-width: 750px;
     display: grid;
     grid-template-columns: 1fr 1fr 0.3fr 1fr;
     grid-template-rows: 35vh 35vh;

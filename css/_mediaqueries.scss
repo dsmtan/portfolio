@@ -1,29 +1,32 @@
-// -- NAVIGATION ONLY -- //
+// -- TABLET SIZE PORTRAIT --//
 
-@media (min-height: 550px) and (min-width: 960px) {
-  @include nav--switchtoside;
-}
-
-@media (min-height: 690px) {
-  @include nav--bigheight;
-}
-
-// ALL CONTENT
-// -- TABLET SIZE --//
-
-@media (min-width: 600px) and (orientation: portrait) {
-  @include nav--tablet-portrait;
+@media (min-width: 600px) and (max-width: 1100px) and (orientation: portrait) {
+  @include nav--tablet;
   @include index--tablet-portrait;
-  @include portfolio--tablet;
-  @include about--tablet;
+  @include portfolio--tablet; //done
+  @include about--tablet; //done
 }
 
-// -- TABLET LANDSCAPE + LAPTOP SIZE --//
+// -- TABLET LANDSCAPE/LARGE TABLET -- //
 
-@media (min-width: 600px) and (orientation: landscape) {
+@media (min-width: 900px) and (orientation: landscape) {
+  @include nav--switchtoside;
+  @include index--laptop;
+  @include portfolio--tablet; //done
+  @include about--laptop;
+}
+
+// -- LAPTOP SIZE  --//
+
+@media (min-width: 1100px) and (orientation: landscape) and (hover: hover) {
+  @include nav--switchtoside;
   @include index--laptop;
   @include portfolio--laptop;
   @include about--laptop;
+}
+
+@media (min-height: 750px) and (orientation: landscape) {
+  @include nav--bigheight;
 }
 
 // -- LARGE DESKTOP SIZE --//

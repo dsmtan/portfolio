@@ -148,7 +148,7 @@ p {
   border-color: transparent transparent $bluegrey transparent;
 }
 
-//--- BREAKPOINT width 600px - 1100px
+//--- BREAKPOINT TABLET PORTRAIT 600px
 
 @mixin about--tablet {
   .grid--aboutwrapper {
@@ -174,7 +174,7 @@ p {
     margin: 0 auto;
 
     h3 {
-      margin-top: 1.5em;
+      margin-top: 1em;
       text-align: center;
     }
 
@@ -182,8 +182,12 @@ p {
       margin-top: 2em;
     }
 
+    .gridbox {
+      @include flexCenter;
+    }
+
     .grid--iconwrapper {
-      width: 54%;
+      width: auto;
       text-align: center;
       margin: 0 auto;
     }
@@ -196,12 +200,95 @@ p {
   }
 }
 
-//--- BREAKPOINT width 1100px - 1550px
+//--- BREAKPOINT LAPTOP 1200px
 
 @mixin about--laptop {
+  p {
+    font-size: 1.4em;
+  }
+
+  .header--about {
+    margin-right: auto;
+    margin-left: 27%;
+    border-bottom: 3px solid $yellow;
+    text-align: left;
+
+    h2 {
+      margin-right: -2px;
+    }
+  }
+
+  .grid--aboutwrapper {
+    grid-template-columns: 1fr 1.2fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 0 2.5em;
+    margin: 0 auto;
+    margin-top: 3.5em;
+    width: 90vw;
+  }
+
+  .aboutintro {
+    grid-area: 1 / 2;
+    margin: 1.5em 3em auto 0;
+  }
+
+  .div--profilebg {
+    grid-area: 1 / 1 / span 2;
+    width: 100%;
+    height: auto;
+    background-image: url(../images/aboutprofile.png);
+    background-position: center 0px;
+    margin-top: 3em;
+  }
+
+  .profilelinks a {
+    font-size: 1.5em;
+  }
+
+  .div--understanding {
+    grid-area: 2 / 2;
+    width: auto;
+    margin: 0 3em auto 0;
+
+    h3 {
+      margin-top: 1.3em;
+      font-size: 2.7em;
+    }
+
+    h4 {
+      margin-top: 2em;
+      font-size: 1.4em;
+    }
+
+    .gridbox {
+    }
+
+    .grid--iconwrapper {
+      grid-template-columns: 85px 95px 85px;
+      width: auto;
+      text-align: center;
+      margin: 0 auto;
+      column-gap: 2em;
+
+      h5 {
+        font-size: 0.75em;
+      }
+    }
+  }
+
+  .icons {
+    height: 75px;
+    width: 75px;
+  }
+
+  .seeyou {
+    grid-area: 3/ 2;
+    margin-left: 0;
+    font-size: 1.7em;
+  }
 }
 
-//--- BREAKPOINT width 1550px
+//--- BREAKPOINT DESKTOP width 1550px
 
 @mixin about--desktop {
 }

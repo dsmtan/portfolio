@@ -80,7 +80,7 @@
   }
 }
 
-//--- BREAKPOINT width 600px PORTRAIT
+//--- BREAKPOINT TABLET PORTRAIT width 600px
 
 @mixin index--tablet-portrait {
   .headertext {
@@ -96,8 +96,58 @@
   }
 
   .div--linesbackground {
+    max-height: 50vh;
+    height: 100%;
+    top: 40px;
+    background-position: -220px;
+  }
+
+  .div--trianglebackground {
+    top: 4vh;
+    left: -75px;
+    opacity: 0.9;
+  }
+
+  .div--introblock {
+    width: 50vw;
+    max-width: 500px;
+    padding: 30px 28px;
+    background-color: $yellow2;
+    transform: skew(-16deg);
+    top: 18vh;
+    left: calc(50vw - 50px);
+
+    h3 {
+      margin-left: 12px;
+      font-size: 1.6em;
+      transform: skew(16deg);
+    }
+  }
+}
+
+// BREAKPOINT TABLET LANDSCAPE width 900px
+
+@mixin index--tablet {
+  .headertext {
+    font-size: 2.4em;
+  }
+
+  .section--index {
+    height: 100vh;
+
+    .header--name {
+      margin-left: 35%;
+
+      h1 {
+        font-size: 3em;
+      }
+    }
+  }
+
+  .div--linesbackground {
     position: absolute;
     background: url(../images/testlines.png);
+    max-height: 100vh;
     height: 100%;
     width: 100%;
     top: 40px;
@@ -109,16 +159,11 @@
   }
 
   .div--trianglebackground {
-    position: relative;
-    background: url(../images/triangles_mobile_yellow.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
     min-height: 75%;
     width: 100%;
     float: left;
     top: 4vh;
-    left: -70px;
+    left: -75px;
     opacity: 0.9;
     z-index: 1;
   }
@@ -144,12 +189,12 @@
 
 @mixin index--laptop {
   .headertext {
-    font-size: 3.9em;
+    font-size: 3.2em;
   }
 
   section {
     display: block;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
   }
 
@@ -219,7 +264,7 @@
 
 @mixin index--desktop {
   .headertext {
-    font-size: 5em;
+    font-size: 4em;
   }
 
   .div--introblock h3 {
