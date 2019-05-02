@@ -104,33 +104,6 @@ button > a {
   right: 4%;
 }
 
-@media screen and (min-height: 550px) and (min-width: 960px) {
-  .burgermenu {
-    display: none;
-  }
-  .nav--mobile {
-    display: none;
-  }
-  .nav--side {
-    display: block;
-  }
-  #profileimg {
-    background-image: url(../images/aboutprofile.png);
-  }
-}
-
-@media screen and (min-height: 690px) {
-  .nav--side > button {
-    padding: 1.2em 2.5em;
-  }
-  button > a {
-    font-size: 2.1em;
-  }
-  .navarrow {
-    height: 30px;
-  }
-}
-
 /*----------------------------------*\ 
     INDEX SECTION MOBILE FIRST
 \*----------------------------------*/
@@ -470,12 +443,47 @@ p {
   border-color: transparent transparent #c4d5e0 transparent;
 }
 
-@media (min-width: 600px) and (max-width: 1100px) {
+@media (min-height: 550px) and (min-width: 960px) {
+  .burgermenu {
+    display: none;
+  }
+  .nav--mobile {
+    display: none;
+  }
+  .nav--side {
+    display: block;
+  }
+  #profileimg {
+    background-image: url(../images/aboutprofile.png);
+  }
+}
+
+@media (min-height: 690px) {
+  .nav--side > button {
+    padding: 1.2em 2.5em;
+  }
+  button > a {
+    font-size: 2.1em;
+  }
+  .navarrow {
+    height: 30px;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+  .nav--mobile {
+    width: 50%;
+    left: auto;
+    right: 0%;
+  }
   .headertext {
     font-size: 2.4em;
   }
   .section--index {
-    height: 100vh;
+    height: 50vh;
+  }
+  .section--index .header--name {
+    margin-left: 35%;
   }
   .div--linesbackground {
     position: absolute;
@@ -494,18 +502,89 @@ p {
     background: url(../images/triangles_mobile_yellow.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right;
-    min-height: 80%;
+    background-position: left;
+    min-height: 75%;
     width: 100%;
     float: left;
-    top: 2vh;
+    top: 4vh;
     left: -70px;
     opacity: 0.9;
     z-index: 1;
   }
+  .div--introblock {
+    width: 50vw;
+    max-width: 500px;
+    padding: 30px 28px;
+    background-color: #dcbb5b;
+    -webkit-transform: skew(-16deg);
+            transform: skew(-16deg);
+    top: 18vh;
+    left: calc(50vw - 50px);
+  }
+  .div--introblock h3 {
+    margin-left: 12px;
+    font-size: 1.6em;
+    -webkit-transform: skew(16deg);
+            transform: skew(16deg);
+  }
+  .grid--pfwrapper {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  article {
+    height: 25vh;
+  }
+  .grid--aboutwrapper {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+    grid-gap: 0;
+    margin-top: 2.5em;
+  }
+  .aboutintro {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: 1 / 2;
+    margin: 2em 3em auto 0.7em;
+  }
+  .div--profilebg {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: 1 / 1;
+    width: 335px;
+  }
+  .div--understanding {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: 2 / 1 / 3 / span 2;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .div--understanding h3 {
+    margin-top: 1.5em;
+    text-align: center;
+  }
+  .div--understanding h4 {
+    margin-top: 2em;
+  }
+  .div--understanding .grid--iconwrapper {
+    width: 54%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .seeyou {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: 3/ 2;
+    margin-left: 0;
+    font-size: 1.7em;
+  }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 600px) and (orientation: landscape) {
   .headertext {
     font-size: 3.9em;
   }
@@ -684,9 +763,9 @@ p {
   }
 }
 
-@media (min-width: 1550x) {
+@media (min-width: 1550px) {
   .headertext {
-    font-size: 4.2em;
+    font-size: 5em;
   }
   .div--introblock h3 {
     font-size: 2.4em;

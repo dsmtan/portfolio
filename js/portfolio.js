@@ -43,7 +43,11 @@ function droplinkClicked(event) {
 }
 
 function openNav() {
-  mobileNav.style.height = "100%";
+  if (screen.height > 1000) {
+    mobileNav.style.height = "50%";
+  } else {
+    mobileNav.style.height = "100%";
+  }
   mobileNav.style.WebkitTransition = "0.4s";
 }
 

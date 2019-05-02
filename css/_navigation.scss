@@ -88,7 +88,15 @@ button > a {
   right: 4%;
 }
 
-@media screen and (min-height: 550px) and (min-width: 960px) {
+@mixin nav--tablet-portrait {
+  .nav--mobile {
+    width: 50%;
+    left: auto;
+    right: 0%;
+  }
+}
+
+@mixin nav--switchtoside {
   .burgermenu {
     display: none;
   }
@@ -106,7 +114,7 @@ button > a {
   }
 }
 
-@media screen and (min-height: 690px) {
+@mixin nav--bigheight {
   .nav--side > button {
     padding: 1.2em 2.5em;
   }

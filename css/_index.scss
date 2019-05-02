@@ -80,15 +80,19 @@
   }
 }
 
-//--- BREAKPOINT width 600px - 1100px
+//--- BREAKPOINT width 600px PORTRAIT
 
-@mixin index--tablet {
+@mixin index--tablet-portrait {
   .headertext {
     font-size: 2.4em;
   }
 
   .section--index {
-    height: 100vh;
+    height: 50vh;
+
+    .header--name {
+      margin-left: 35%;
+    }
   }
 
   .div--linesbackground {
@@ -109,14 +113,30 @@
     background: url(../images/triangles_mobile_yellow.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right;
-    min-height: 80%;
+    background-position: left;
+    min-height: 75%;
     width: 100%;
     float: left;
-    top: 2vh;
+    top: 4vh;
     left: -70px;
     opacity: 0.9;
     z-index: 1;
+  }
+
+  .div--introblock {
+    width: 50vw;
+    max-width: 500px;
+    padding: 30px 28px;
+    background-color: $yellow2;
+    transform: skew(-16deg);
+    top: 18vh;
+    left: calc(50vw - 50px);
+
+    h3 {
+      margin-left: 12px;
+      font-size: 1.6em;
+      transform: skew(16deg);
+    }
   }
 }
 
@@ -198,4 +218,11 @@
 //--- BREAKPOINT width 1550px
 
 @mixin index--desktop {
+  .headertext {
+    font-size: 5em;
+  }
+
+  .div--introblock h3 {
+    font-size: 2.4em;
+  }
 }
