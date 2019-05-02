@@ -1,0 +1,23 @@
+// -- TABLET SIZE --/
+
+@media (min-width: 600px) and (max-width: 1100px) {
+  @include index--tablet;
+  @include portfolio--tablet;
+  @include about--tablet;
+}
+
+// -- LAPTOP SIZE --/
+
+@media (min-width: 1100px) {
+  @include index--laptop;
+  @include portfolio--laptop;
+  @include about--laptop;
+}
+
+// -- LARGE DESKTOP SIZE --/
+
+@media (min-width: 1550x) {
+  @include index--desktop;
+  @include portfolio--desktop;
+  @include about--desktop;
+}

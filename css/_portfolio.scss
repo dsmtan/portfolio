@@ -1,5 +1,5 @@
 /*------------------------------*\ 
-    #PORTFOLIO SECTION MOBILE
+  PORTFOLIO SECTION MOBILE FIRST
 \*------------------------------*/
 
 .section--portfolio {
@@ -67,5 +67,115 @@ article {
     font-size: 1.4em;
     color: $darkblue;
     margin: 0.5em;
+  }
+}
+
+//--- BREAKPOINT width 600px - 1100px
+
+@mixin portfolio--tablet {
+}
+
+//--- BREAKPOINT width 1100px - 1550px
+
+@mixin portfolio--laptop {
+  .section--portfolio {
+    margin-top: 2em;
+  }
+
+  .header--pf {
+    margin-right: 60%;
+    border-bottom: 4px solid $darkblue;
+
+    h2 {
+      margin-right: -5px;
+      color: $yellow;
+    }
+  }
+
+  .grid--pfwrapper {
+    height: 700px;
+    width: 60vw;
+    min-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.3fr 1fr;
+    grid-template-rows: 35vh 35vh;
+  }
+
+  #pf1 {
+    grid-area: 1 / 1;
+  }
+
+  #pf2 {
+    grid-area: 1 / 2 / 2 / span 2;
+  }
+
+  #pf3 {
+    grid-area: 1 / 4;
+  }
+
+  #pf4 {
+    grid-area: 2 / 1 / 3 / span 2;
+  }
+
+  #pf5 {
+    grid-area: 2 / 3 / 3 / span 2;
+  }
+
+  .grid--pfwrapper > article {
+    @include flexCenter();
+    background-color: $bluegrey;
+    position: relative;
+    min-height: 25vh;
+    height: auto;
+    padding: 1.5em;
+    cursor: pointer;
+  }
+
+  .grid--pfwrapper > article > img {
+    object-fit: contain;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 0.95;
+  }
+
+  #pf1 > img {
+    max-height: 100%;
+  }
+  #pf5 > img {
+    max-height: 100%;
+  }
+
+  .titlelayer {
+    @include flexCenter();
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: $darkblue;
+
+    &:hover {
+      transition: 0.4s ease;
+      opacity: 0.95;
+    }
+
+    .projecttitle {
+      font-size: 2.5em;
+      color: $yellow;
+      margin: 0.5em;
+    }
+  }
+}
+
+//--- BREAKPOINT width 1550px
+
+@mixin portfolio--desktop {
+  .headertext {
+    font-size: 4.2em;
+  }
+
+  .div--introblock h3 {
+    font-size: 2.4em;
   }
 }

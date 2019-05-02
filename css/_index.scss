@@ -1,5 +1,5 @@
 /*----------------------------------*\ 
-      #INDEX GRAPHICS SECTION MOBILE
+    INDEX SECTION MOBILE FIRST
 \*----------------------------------*/
 .headertext {
   font-size: 2em;
@@ -78,4 +78,124 @@
     text-align: justify;
     word-wrap: break-word;
   }
+}
+
+//--- BREAKPOINT width 600px - 1100px
+
+@mixin index--tablet {
+  .headertext {
+    font-size: 2.4em;
+  }
+
+  .section--index {
+    height: 100vh;
+  }
+
+  .div--linesbackground {
+    position: absolute;
+    background: url(../images/testlines.png);
+    height: 100%;
+    width: 100%;
+    top: 40px;
+    left: 0;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: -220px;
+    z-index: 0;
+  }
+
+  .div--trianglebackground {
+    position: relative;
+    background: url(../images/triangles_mobile_yellow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    min-height: 80%;
+    width: 100%;
+    float: left;
+    top: 2vh;
+    left: -70px;
+    opacity: 0.9;
+    z-index: 1;
+  }
+}
+
+//--- BREAKPOINT width 1100px - 1550px
+
+@mixin index--laptop {
+  .headertext {
+    font-size: 3.9em;
+  }
+
+  section {
+    display: block;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .section--index {
+    height: 100vh;
+
+    .header--name {
+      margin-left: 36%;
+      margin-top: 12vh;
+      border-bottom: 4px solid $darkblue;
+
+      h1 {
+        font-size: 3.9em;
+      }
+    }
+  }
+
+  .div--linesbackground {
+    height: 100vh;
+    max-height: none;
+    top: 0;
+    background-size: auto 91%;
+    background-position: -240px 25px;
+  }
+
+  .div--trianglebackground {
+    background: none;
+    display: block;
+    height: 83vh;
+    min-height: none;
+    width: 48vw;
+    top: 3.5vh;
+    left: -40px;
+    opacity: 1;
+    text-align: right;
+
+    svg {
+      display: inline;
+      position: relative;
+      object-fit: cover;
+      object-position: right;
+      height: 100%;
+      width: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .div--introblock {
+    width: 45vw;
+    max-width: 755px;
+    padding: 35px 30px;
+    background-color: $yellow2;
+    transform: skew(-16deg);
+    top: 40vh;
+    left: calc(48vw - 58px);
+
+    h3 {
+      margin-left: 18px;
+      font-size: 2em;
+      transform: skew(16deg);
+    }
+  }
+}
+
+//--- BREAKPOINT width 1550px
+
+@mixin index--desktop {
 }
