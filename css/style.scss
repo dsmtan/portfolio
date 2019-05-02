@@ -17,11 +17,11 @@
     font-size: 2.4em;
   }
 
-  #indexSection {
+  .section--index {
     height: 100vh;
   }
 
-  #indexbackground {
+  .div--linesbackground {
     position: absolute;
     background: url(../images/testlines.png);
     height: 100%;
@@ -34,7 +34,7 @@
     z-index: 0;
   }
 
-  #trianglebackground {
+  .div--trianglebackground {
     position: relative;
     background: url(../images/triangles_mobile_yellow.png);
     background-repeat: no-repeat;
@@ -63,10 +63,10 @@
     margin: 0;
   }
 
-  #indexSection {
+  .section--index {
     height: 100vh;
 
-    #nameheader {
+    .header--name {
       margin-left: 36%;
       margin-top: 12vh;
       border-bottom: 4px solid $darkblue;
@@ -79,7 +79,7 @@
 
   /* >> INDEX SECTION 1100px */
 
-  #indexbackground {
+  .div--linesbackground {
     height: 100vh;
     max-height: none;
     top: 0;
@@ -87,7 +87,7 @@
     background-position: -240px 25px;
   }
 
-  #trianglebackground {
+  .div--trianglebackground {
     background: none;
     display: block;
     height: 83vh;
@@ -110,7 +110,7 @@
     }
   }
 
-  #introblock {
+  .div--introblock {
     width: 45vw;
     max-width: 755px;
     padding: 35px 30px;
@@ -119,7 +119,7 @@
     top: 40vh;
     left: calc(48vw - 58px);
 
-    #introtext {
+    h3 {
       margin-left: 18px;
       font-size: 2em;
       transform: skew(16deg);
@@ -128,11 +128,11 @@
 
   /* >> PORTFOLIO SECTION 1100px */
 
-  #portfolioSection {
+  .section--portfolio {
     margin-top: 2em;
   }
 
-  #pfheader {
+  .header--pf {
     margin-right: 60%;
     border-bottom: 4px solid $darkblue;
 
@@ -142,7 +142,7 @@
     }
   }
 
-  .pfwrapper {
+  .grid--pfwrapper {
     height: 700px;
     width: 60vw;
     min-width: 900px;
@@ -171,7 +171,7 @@
     grid-area: 2 / 3 / 3 / span 2;
   }
 
-  .pfwrapper > article {
+  .grid--pfwrapper > article {
     @include flexCenter();
     background-color: $bluegrey;
     position: relative;
@@ -181,7 +181,7 @@
     cursor: pointer;
   }
 
-  .pfwrapper > article > img {
+  .grid--pfwrapper > article > img {
     object-fit: contain;
     height: auto;
     width: auto;
@@ -227,7 +227,7 @@
     font-size: 4.2em;
   }
 
-  #introtext {
+  .div--introblock h3 {
     font-size: 2.4em;
   }
 }

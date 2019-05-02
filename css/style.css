@@ -16,7 +16,7 @@ body {
 /*---------------------------*\ 
        #NAVIGATION MOBILE
   \*---------------------------*/
-#burgermenu {
+.burgermenu {
   float: right;
   height: 21px;
   margin-right: 5px;
@@ -24,7 +24,7 @@ body {
   cursor: pointer;
 }
 
-#mobilenav {
+.nav--mobile {
   height: 0%;
   width: 100%;
   position: fixed;
@@ -37,7 +37,7 @@ body {
   transition: 0.5s;
 }
 
-#mobilenav .overlay-content {
+.nav--mobile .overlay-content {
   position: relative;
   top: 15%;
   width: 100%;
@@ -45,7 +45,7 @@ body {
   margin-top: 30px;
 }
 
-#mobilenav a {
+.nav--mobile a {
   display: block;
   font-weight: 300;
   font-size: 2.5em;
@@ -55,7 +55,7 @@ body {
   cursor: pointer;
 }
 
-#mobilenav .closebtn {
+.nav--mobile .closebtn {
   position: absolute;
   top: -20px;
   right: 10px;
@@ -66,7 +66,7 @@ body {
 /*-----------------------------------------*\ 
         #NAVIGATION SIDE + VERTICAL DESKTOP
 \*-----------------------------------------*/
-#sidenav {
+.nav--side {
   display: none;
   height: 85px;
   width: 100vh;
@@ -81,7 +81,7 @@ body {
   z-index: 100;
 }
 
-#sidenav > button {
+.nav--side > button {
   font-family: "brandon-grotesque", sans-serif;
   background-color: transparent;
   border: none;
@@ -97,7 +97,7 @@ button > a {
   font-weight: 400;
 }
 
-#navarrow {
+.navarrow {
   position: absolute;
   height: 25px;
   top: calc(50% - 15px);
@@ -105,13 +105,13 @@ button > a {
 }
 
 @media screen and (min-height: 550px) and (min-width: 960px) {
-  #burgermenu {
+  .burgermenu {
     display: none;
   }
-  #mobilenav {
+  .nav--mobile {
     display: none;
   }
-  #sidenav {
+  .nav--side {
     display: block;
   }
   #profileimg {
@@ -120,13 +120,13 @@ button > a {
 }
 
 @media screen and (min-height: 690px) {
-  #sidenav > button {
+  .nav--side > button {
     padding: 1.2em 2.5em;
   }
   button > a {
     font-size: 2.1em;
   }
-  #navarrow {
+  .navarrow {
     height: 30px;
   }
 }
@@ -141,12 +141,12 @@ button > a {
   text-transform: uppercase;
 }
 
-#indexSection {
+.section--index {
   height: 80vh;
   margin: 0;
 }
 
-#indexSection #nameheader {
+.section--index .header--name {
   position: relative;
   padding-top: 2em;
   margin-left: 5.5em;
@@ -154,13 +154,13 @@ button > a {
   z-index: 3;
 }
 
-#indexSection #nameheader h1 {
+.section--index .header--name h1 {
   font-size: 2.3em;
   margin-left: -14px;
   padding: 3px 10px;
 }
 
-#indexbackground {
+.div--linesbackground {
   position: absolute;
   background: url(../images/testlines.png);
   height: 75vh;
@@ -174,7 +174,7 @@ button > a {
   z-index: 0;
 }
 
-#trianglebackground {
+.div--trianglebackground {
   position: relative;
   background: url(../images/triangles_mobile_yellow.png);
   background-repeat: no-repeat;
@@ -188,11 +188,11 @@ button > a {
   z-index: 1;
 }
 
-#trianglebackground svg {
+.div--trianglebackground svg {
   display: none;
 }
 
-#introblock {
+.div--introblock {
   position: absolute;
   height: auto;
   width: 82%;
@@ -202,7 +202,7 @@ button > a {
   z-index: 5;
 }
 
-#introblock #introtext {
+.div--introblock h3 {
   position: relative;
   margin: 0;
   font-size: 1.4em;
@@ -216,22 +216,22 @@ button > a {
 /*------------------------------*\ 
     #PORTFOLIO SECTION MOBILE
 \*------------------------------*/
-#portfolioSection {
+.section--portfolio {
   padding-top: 1.8em;
 }
 
-#pfheader {
+.header--pf {
   margin-right: 27%;
   border-bottom: 3px solid #d5ad39;
   text-align: right;
 }
 
-#pfheader h2 {
+.header--pf h2 {
   color: #0c2f44;
   margin-right: -2px;
 }
 
-.pfwrapper {
+.grid--pfwrapper {
   height: auto;
   width: 80%;
   margin: 1em auto;
@@ -306,22 +306,29 @@ article img {
 /*------------------------------*\ 
     #ABOUT SECTION MOBILE
 \*------------------------------*/
-#aboutSection {
+p {
+  font-size: 1.1em;
+  font-weight: 300;
+  text-align: justify;
+  margin: 0;
+}
+
+.section--about {
   margin-top: 5em;
   padding-top: 1.2em;
 }
 
-#aboutheader {
+.header--about {
   margin-right: 27%;
   border-bottom: 3px solid #d5ad39;
   text-align: right;
 }
 
-#aboutheader h2 {
+.header--about h2 {
   margin-right: -2px;
 }
 
-.aboutwrapper {
+.grid--aboutwrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -331,18 +338,11 @@ article img {
   grid-gap: 1em;
 }
 
-p {
-  font-size: 1.1em;
-  font-weight: 300;
-  text-align: justify;
-  margin: 0;
-}
-
-#aboutintro {
+.aboutintro {
   margin: 1.5em 1.8em;
 }
 
-#profileimg {
+.div--profilebg {
   height: 360px;
   width: 94%;
   margin: 0 auto;
@@ -353,7 +353,7 @@ p {
   text-align: center;
 }
 
-#profilelinks {
+.profilelinks {
   -webkit-transform: rotate(-14.5deg);
           transform: rotate(-14.5deg);
   -webkit-transform-origin: right bottom;
@@ -362,7 +362,7 @@ p {
   top: 10px;
 }
 
-#profilelinks > a {
+.profilelinks a {
   display: inline;
   font-size: 1.2em;
   font-weight: 500;
@@ -373,11 +373,11 @@ p {
   cursor: pointer;
 }
 
-#understanding {
+.div--understanding {
   margin: 1.8em;
 }
 
-#understanding > h3 {
+.div--understanding h3 {
   font-size: 2.4em;
   font-family: "mrs-eaves", serif;
   font-style: italic;
@@ -387,7 +387,14 @@ p {
   margin-bottom: 0.5em;
 }
 
-#iconwrapper {
+.div--understanding h4 {
+  font-size: 1.1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 1em 0 0.5em 0;
+}
+
+.grid--iconwrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 65px 75px 65px;
@@ -400,6 +407,13 @@ p {
   justify-items: center;
   text-align: center;
   margin: 2em 0;
+}
+
+.grid--iconwrapper h5 {
+  font-size: 0.6em;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .icons {
@@ -423,27 +437,13 @@ p {
   outline: 0;
 }
 
-.iconselected {
-  background-color: #d5ad39;
-}
-
-.icons > img {
+.icons img {
   max-height: 58%;
   max-width: 58%;
 }
 
-#iconwrapper > h5 {
-  font-size: 0.6em;
-  font-weight: 500;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-#understanding > h4 {
-  font-size: 1.1em;
-  font-weight: 500;
-  text-transform: uppercase;
-  margin: 1em 0 0.5em 0;
+.icon--selected {
+  background-color: #d5ad39;
 }
 
 .nextarrow {
@@ -451,7 +451,7 @@ p {
   margin-left: 0.8em;
 }
 
-#seeyou {
+.seeyou {
   color: #d5ad39;
   font-size: 1.5em;
   font-weight: 400;
@@ -478,10 +478,10 @@ p {
   .headertext {
     font-size: 2.4em;
   }
-  #indexSection {
+  .section--index {
     height: 100vh;
   }
-  #indexbackground {
+  .div--linesbackground {
     position: absolute;
     background: url(../images/testlines.png);
     height: 100%;
@@ -493,7 +493,7 @@ p {
     background-position: -220px;
     z-index: 0;
   }
-  #trianglebackground {
+  .div--trianglebackground {
     position: relative;
     background: url(../images/triangles_mobile_yellow.png);
     background-repeat: no-repeat;
@@ -519,26 +519,26 @@ p {
     height: 100vh;
     margin: 0;
   }
-  #indexSection {
+  .section--index {
     height: 100vh;
   }
-  #indexSection #nameheader {
+  .section--index .header--name {
     margin-left: 36%;
     margin-top: 12vh;
     border-bottom: 4px solid #0c2f44;
   }
-  #indexSection #nameheader h1 {
+  .section--index .header--name h1 {
     font-size: 3.9em;
   }
   /* >> INDEX SECTION 1100px */
-  #indexbackground {
+  .div--linesbackground {
     height: 100vh;
     max-height: none;
     top: 0;
     background-size: auto 91%;
     background-position: -240px 25px;
   }
-  #trianglebackground {
+  .div--trianglebackground {
     background: none;
     display: block;
     height: 83vh;
@@ -549,7 +549,7 @@ p {
     opacity: 1;
     text-align: right;
   }
-  #trianglebackground svg {
+  .div--trianglebackground svg {
     display: inline;
     position: relative;
     -o-object-fit: cover;
@@ -561,7 +561,7 @@ p {
     max-width: 100%;
     max-height: 100%;
   }
-  #introblock {
+  .div--introblock {
     width: 45vw;
     max-width: 755px;
     padding: 35px 30px;
@@ -571,25 +571,25 @@ p {
     top: 40vh;
     left: calc(48vw - 58px);
   }
-  #introblock #introtext {
+  .div--introblock h3 {
     margin-left: 18px;
     font-size: 2em;
     -webkit-transform: skew(16deg);
             transform: skew(16deg);
   }
   /* >> PORTFOLIO SECTION 1100px */
-  #portfolioSection {
+  .section--portfolio {
     margin-top: 2em;
   }
-  #pfheader {
+  .header--pf {
     margin-right: 60%;
     border-bottom: 4px solid #0c2f44;
   }
-  #pfheader h2 {
+  .header--pf h2 {
     margin-right: -5px;
     color: #d5ad39;
   }
-  .pfwrapper {
+  .grid--pfwrapper {
     height: 700px;
     width: 60vw;
     min-width: 900px;
@@ -631,7 +631,7 @@ p {
     -ms-grid-column-span: 2;
     grid-area: 2 / 3 / 3 / span 2;
   }
-  .pfwrapper > article {
+  .grid--pfwrapper > article {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -648,7 +648,7 @@ p {
     padding: 1.5em;
     cursor: pointer;
   }
-  .pfwrapper > article > img {
+  .grid--pfwrapper > article > img {
     -o-object-fit: contain;
        object-fit: contain;
     height: auto;
@@ -697,7 +697,7 @@ p {
   .headertext {
     font-size: 4.2em;
   }
-  #introtext {
+  .div--introblock h3 {
     font-size: 2.4em;
   }
 }

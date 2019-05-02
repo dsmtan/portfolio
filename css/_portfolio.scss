@@ -2,11 +2,11 @@
     #PORTFOLIO SECTION MOBILE
 \*------------------------------*/
 
-#portfolioSection {
+.section--portfolio {
   padding-top: 1.8em;
 }
 
-#pfheader {
+.header--pf {
   margin-right: 27%;
   border-bottom: 3px solid $yellow;
   text-align: right;
@@ -17,7 +17,7 @@
   }
 }
 
-.pfwrapper {
+.grid--pfwrapper {
   height: auto;
   width: 80%;
   margin: 1em auto;

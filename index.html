@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/wxs3hfe.css" />
   </head>
   <body id="body">
-    <nav id="mobilenav" class="overlay">
+    <nav class="nav--mobile">
       <a href="javascript:void(0)" class="closebtn">&times;</a>
       <div class="overlay-content">
         <a id="homelink" class="droplink" href="#">Home</a>
@@ -18,22 +18,22 @@
       </div>
     </nav>
 
-    <nav id="sidenav">
-      <button><a href="">HOME</a></button>
-      <button><a href="">PORTFOLIO</a></button>
-      <button><a href="">ABOUT ME</a></button>
-      <img id="navarrow" src="images/arrows.png" />
+    <nav class="nav--side" id="sidenav">
+      <button><a href="#">HOME</a></button>
+      <button><a href="portfolioSection">PORTFOLIO</a></button>
+      <button><a href="aboutSection">ABOUT ME</a></button>
+      <img class="navarrow" src="images/arrows.png" />
     </nav>
 
-    <section id="indexSection">
-      <div id="nameheader">
+    <section class="section--index">
+      <div class="header--name">
         <h1 id="nametext" class="headertext">
-          DENISE TAN <img id="burgermenu" src="images/burgermenu.svg" />
+          DENISE TAN <img class="burgermenu" src="images/burgermenu.svg" />
         </h1>
       </div>
 
-      <div id="indexbackground">
-        <div id="trianglebackground">
+      <div class="div--linesbackground">
+        <div class="div--trianglebackground">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 605.394 683.127">
             <g id="Layer_1-2" data-name="Layer 1">
               <polygon
@@ -72,8 +72,8 @@
             </g>
           </svg>
         </div>
-        <div id="introblock">
-          <h3 id="introtext">
+        <div class="div--introblock">
+          <h3>
             A front-end designer and developer who understands your business,
             your users and the importance of clean code.
           </h3>
@@ -81,12 +81,12 @@
       </div>
     </section>
 
-    <section id="portfolioSection">
-      <div id="pfheader">
-        <h2 id="pftext" class="headertext">PORTFOLIO</h2>
+    <section class="section--portfolio">
+      <div class="header--pf">
+        <h2 class="headertext">PORTFOLIO</h2>
       </div>
 
-      <div class="pfwrapper">
+      <div class="grid--pfwrapper">
         <article id="pf1">
           <img src="images/bastardmockup.png" />
           <div class="titlelayer">
@@ -123,24 +123,22 @@
       <span class="uparrow"></span>
     </section>
 
-    <section id="aboutSection">
-      <div id="aboutheader">
+    <section class="section--about" id="aboutSection">
+      <div class="header--about">
         <h2 id="abouttext" class="headertext">ABOUT ME</h2>
       </div>
 
-      <div class="aboutwrapper">
-        <p id="aboutintro">
+      <div class="grid--aboutwrapper">
+        <p class="aboutintro">
           One thing is for sure: I'm not your average designer-developer! I went
           from being a Dutch lawyer to a now passionate front-end developer who
           cares about smart design. I'm always up for a challenge and eager to
           learn new exciting stuff. Check out how I could be a valuable addition
           to your business below.
         </p>
-        <div id="profileimg">
-          <div id="profilelinks">
-            <a href="https://exnuncdesigns.com/CV_2019.pdf" target="_blank"
-              >CV</a
-            >
+        <div class="div--profilebg">
+          <div class="profilelinks">
+            <a href="https://exnuncdesigns.com/cv.html" target="_blank">CV</a>
             <a href="https://www.linkedin.com/in/dsmtan" target="_blank"
               >LinkedIn</a
             >
@@ -148,10 +146,10 @@
           </div>
         </div>
 
-        <div id="understanding">
+        <div class="div--understanding">
           <h3>Why I understand...</h3>
-          <div id="iconwrapper">
-            <div id="usersicon" class="icons iconselected">
+          <div class="grid--iconwrapper">
+            <div id="usersicon" class="icons icon--selected">
               <img src="images/users.png" />
             </div>
             <div id="businessicon" class="icons">
@@ -165,13 +163,11 @@
             <h5>Clean Code</h5>
           </div>
 
-          <h4 id="explheader">YOUR USERS</h4>
-          <p id="explanation">REPLACEABLE TEXT</p>
+          <h4 class="header-explanation">YOUR USERS</h4>
+          <p class="p--explanation">REPLACEABLE TEXT</p>
         </div>
 
-        <p id="seeyou" class="headertext">
-          SEE YOU!<span class="uparrow"></span>
-        </p>
+        <p class="seeyou headertext">SEE YOU!<span class="uparrow"></span></p>
       </div>
     </section>
     <script src="js/portfolio.js"></script>

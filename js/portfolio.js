@@ -5,14 +5,14 @@ window.onload = function() {
   setDefaultExpl();
 };
 
-const indexSection = document.querySelector("#indexSection");
-const pfSection = document.querySelector("#portfolioSection");
-const aboutSection = document.querySelector("#aboutSection");
+const indexSection = document.querySelector(".section--index");
+const pfSection = document.querySelector(".section--portfolio");
+const aboutSection = document.querySelector(".section--about");
 
 // --- MOBILE NAVIGATION --- //
-const menuBtn = document.querySelector("#burgermenu");
+const menuBtn = document.querySelector(".burgermenu");
 const closeBtn = document.querySelector(".closebtn");
-const mobileNav = document.querySelector("#mobilenav");
+const mobileNav = document.querySelector(".nav--mobile");
 
 function mobileInit() {
   menuBtn.addEventListener("click", openNav);
@@ -79,15 +79,15 @@ let explanations = [
   }
 ];
 
-//eventlisteners for icons
+//explanation section with icons
 const usersIcon = document.querySelector("#usersicon");
 const businessIcon = document.querySelector("#businessicon");
 const codeIcon = document.querySelector("#codeicon");
-const explainHeader = document.querySelector("#explheader");
-const explainText = document.querySelector("#explanation");
+const explainHeader = document.querySelector(".header-explanation");
+const explainText = document.querySelector(".p--explanation");
 let counter;
 
-//default value users
+//default value = users
 function setDefaultExpl() {
   counter = explanations[0].id;
   explainHeader.textContent = explanations[0].header;
@@ -105,19 +105,19 @@ function showExplanation(newCounter) {
   let selected;
   if (this === usersIcon || newCounter === 3) {
     selected = explanations[0];
-    usersIcon.classList.add("iconselected");
-    businessIcon.classList.remove("iconselected");
-    codeIcon.classList.remove("iconselected");
+    usersIcon.classList.add("icon--selected");
+    businessIcon.classList.remove("icon--selected");
+    codeIcon.classList.remove("icon--selected");
   } else if (this === businessIcon || newCounter === 1) {
     selected = explanations[1];
-    businessIcon.classList.add("iconselected");
-    usersIcon.classList.remove("iconselected");
-    codeIcon.classList.remove("iconselected");
+    businessIcon.classList.add("icon--selected");
+    usersIcon.classList.remove("icon--selected");
+    codeIcon.classList.remove("icon--selected");
   } else if (this === codeIcon || newCounter === 2) {
     selected = explanations[2];
-    codeIcon.classList.add("iconselected");
-    usersIcon.classList.remove("iconselected");
-    businessIcon.classList.remove("iconselected");
+    codeIcon.classList.add("icon--selected");
+    usersIcon.classList.remove("icon--selected");
+    businessIcon.classList.remove("icon--selected");
   }
 
   counter = selected.id;

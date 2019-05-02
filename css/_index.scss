@@ -8,11 +8,11 @@
   text-transform: uppercase;
 }
 
-#indexSection {
+.section--index {
   height: 80vh;
   margin: 0;
 
-  #nameheader {
+  .header--name {
     position: relative;
     padding-top: 2em;
     margin-left: 5.5em;
@@ -27,7 +27,7 @@
   }
 }
 
-#indexbackground {
+.div--linesbackground {
   position: absolute;
   background: url(../images/testlines.png);
   height: 75vh;
@@ -41,7 +41,7 @@
   z-index: 0;
 }
 
-#trianglebackground {
+.div--trianglebackground {
   position: relative;
   background: url(../images/triangles_mobile_yellow.png);
   background-repeat: no-repeat;
@@ -59,7 +59,7 @@
   }
 }
 
-#introblock {
+.div--introblock {
   position: absolute;
   height: auto;
   width: 82%;
@@ -68,7 +68,7 @@
   right: 0.7em;
   z-index: 5;
 
-  #introtext {
+  h3 {
     position: relative;
     margin: 0;
     font-size: 1.4em;

@@ -1,13 +1,19 @@
 /*------------------------------*\ 
     #ABOUT SECTION MOBILE
 \*------------------------------*/
+p {
+  font-size: 1.1em;
+  font-weight: 300;
+  text-align: justify;
+  margin: 0;
+}
 
-#aboutSection {
+.section--about {
   margin-top: 5em;
   padding-top: 1.2em;
 }
 
-#aboutheader {
+.header--about {
   margin-right: 27%;
   border-bottom: 3px solid $yellow;
   text-align: right;
@@ -17,25 +23,18 @@
   }
 }
 
-.aboutwrapper {
+.grid--aboutwrapper {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-gap: 1em;
 }
 
-p {
-  font-size: 1.1em;
-  font-weight: 300;
-  text-align: justify;
-  margin: 0;
-}
-
-#aboutintro {
+.aboutintro {
   margin: 1.5em 1.8em;
 }
 
-#profileimg {
+.div--profilebg {
   height: 360px;
   width: 94%;
   margin: 0 auto;
@@ -46,39 +45,46 @@ p {
   text-align: center;
 }
 
-#profilelinks {
+.profilelinks {
   transform: rotate(-14.5deg);
   transform-origin: right bottom;
   position: relative;
   top: 10px;
+
+  a {
+    display: inline;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: $darkblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 0.8em;
+    cursor: pointer;
+  }
 }
 
-#profilelinks > a {
-  display: inline;
-  font-size: 1.2em;
-  font-weight: 500;
-  color: $darkblue;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin: 0 0.8em;
-  cursor: pointer;
-}
-
-#understanding {
+.div--understanding {
   margin: 1.8em;
+
+  h3 {
+    font-size: 2.4em;
+    font-family: "mrs-eaves", serif;
+    font-style: italic;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 1.3em;
+    margin-bottom: 0.5em;
+  }
+
+  h4 {
+    font-size: 1.1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 1em 0 0.5em 0;
+  }
 }
 
-#understanding > h3 {
-  font-size: 2.4em;
-  font-family: "mrs-eaves", serif;
-  font-style: italic;
-  font-weight: 500;
-  text-align: left;
-  margin-top: 1.3em;
-  margin-bottom: 0.5em;
-}
-
-#iconwrapper {
+.grid--iconwrapper {
   display: grid;
   grid-template-columns: 65px 75px 65px;
   grid-template-rows: auto auto;
@@ -87,6 +93,13 @@ p {
   justify-items: center;
   text-align: center;
   margin: 2em 0;
+
+  h5 {
+    font-size: 0.6em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+  }
 }
 
 .icons {
@@ -96,33 +109,19 @@ p {
   background-color: $bluegrey;
   border-radius: 50%;
   @include flexCenter();
+
+  &:focus {
+    outline: 0;
+  }
+
+  img {
+    max-height: 58%;
+    max-width: 58%;
+  }
 }
 
-.icons:focus {
-  outline: 0;
-}
-
-.iconselected {
+.icon--selected {
   background-color: $yellow;
-}
-
-.icons > img {
-  max-height: 58%;
-  max-width: 58%;
-}
-
-#iconwrapper > h5 {
-  font-size: 0.6em;
-  font-weight: 500;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-#understanding > h4 {
-  font-size: 1.1em;
-  font-weight: 500;
-  text-transform: uppercase;
-  margin: 1em 0 0.5em 0;
 }
 
 .nextarrow {
@@ -130,7 +129,7 @@ p {
   margin-left: 0.8em;
 }
 
-#seeyou {
+.seeyou {
   color: $yellow;
   font-size: 1.5em;
   font-weight: 400;
