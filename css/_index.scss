@@ -199,11 +199,11 @@
   }
 
   .section--index {
-    height: 100vh;
+    top: 0;
 
     .header--name {
       margin-left: 36%;
-      margin-top: 12vh;
+      padding-top: 12vh;
       border-bottom: 4px solid $darkblue;
 
       h1 {

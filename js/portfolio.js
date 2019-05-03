@@ -1,7 +1,7 @@
 "use strict";
 
 window.onload = function() {
-  mobileInit();
+  navInit();
   setDefaultExpl();
 };
 
@@ -14,14 +14,14 @@ const menuBtn = document.querySelector(".burgermenu");
 const closeBtn = document.querySelector(".closebtn");
 const mobileNav = document.querySelector(".nav--mobile");
 
-function mobileInit() {
+function navInit() {
   menuBtn.addEventListener("click", openNav);
   closeBtn.addEventListener("click", closeNav);
   document.addEventListener(
     "click",
     function(event) {
-      if (event.target.classList.contains("droplink")) {
-        droplinkClicked(event);
+      if (event.target.classList.contains("navlink")) {
+        navlinkClicked(event);
       } else if (event.target.classList.contains("uparrow")) {
         gotoTop();
       }
@@ -30,13 +30,16 @@ function mobileInit() {
   );
 }
 
-function droplinkClicked(event) {
+function navlinkClicked(event) {
   event.preventDefault();
-  if (event.target.id === "homelink") {
+  if (event.target.id === "homelink" || event.target.id === "homeside") {
     indexSection.scrollIntoView();
-  } else if (event.target.id === "pflink") {
+  } else if (event.target.id === "pflink" || event.target.id === "pfside") {
     pfSection.scrollIntoView();
-  } else if (event.target.id === "aboutlink") {
+  } else if (
+    event.target.id === "aboutlink" ||
+    event.target.id === "aboutside"
+  ) {
     aboutSection.scrollIntoView();
   }
   closeNav();
@@ -55,6 +58,18 @@ function closeNav() {
 function gotoTop() {
   indexSection.scrollIntoView();
 }
+
+// SIDE NAV -- when bottom of page is reached hide navarrow
+const downArrow = document.querySelector(".navarrow");
+
+window.onscroll = function(ev) {
+  console.log(window.scrollY);
+  if (window.innerHeight + window.scrollY >= document.body.scrollHeight) {
+    downArrow.classList.add("hide");
+  } else {
+    downArrow.classList.remove("hide");
+  }
+};
 
 // --- PORTFOLIO SECTION --- //
 

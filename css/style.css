@@ -13,6 +13,10 @@ body {
   font-family: "brandon-grotesque", sans-serif;
 }
 
+.hide {
+  display: none;
+}
+
 /*---------------------------*\ 
     NAVIGATION MOBILE FIRST
 \*---------------------------*/
@@ -410,6 +414,10 @@ p {
   outline: 0;
 }
 
+.icons:hover {
+  background-color: #d5ad39;
+}
+
 .icons img {
   max-height: 58%;
   max-width: 58%;
@@ -578,11 +586,11 @@ p {
     margin: 0;
   }
   .section--index {
-    height: 100vh;
+    top: 0;
   }
   .section--index .header--name {
     margin-left: 36%;
-    margin-top: 12vh;
+    padding-top: 12vh;
     border-bottom: 4px solid #0c2f44;
   }
   .section--index .header--name h1 {
@@ -721,7 +729,7 @@ p {
     -ms-grid-row: 3;
     -ms-grid-column: 2;
     grid-area: 3/ 2;
-    margin-left: 0;
+    margin-left: 50%;
     font-size: 1.7em;
   }
 }
@@ -748,11 +756,11 @@ p {
     margin: 0;
   }
   .section--index {
-    height: 100vh;
+    top: 0;
   }
   .section--index .header--name {
     margin-left: 36%;
-    margin-top: 12vh;
+    padding-top: 12vh;
     border-bottom: 4px solid #0c2f44;
   }
   .section--index .header--name h1 {
@@ -901,6 +909,7 @@ p {
             justify-content: center;
     position: absolute;
     height: 100%;
+    max-height: none;
     width: 100%;
     opacity: 0;
     background-color: #0c2f44;
@@ -992,7 +1001,7 @@ p {
     -ms-grid-row: 3;
     -ms-grid-column: 2;
     grid-area: 3/ 2;
-    margin-left: 0;
+    margin-left: 50%;
     font-size: 1.7em;
   }
 }

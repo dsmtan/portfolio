@@ -114,6 +114,10 @@ p {
     outline: 0;
   }
 
+  &:hover {
+    background-color: $yellow;
+  }
+
   img {
     max-height: 58%;
     max-width: 58%;
@@ -283,7 +287,7 @@ p {
 
   .seeyou {
     grid-area: 3/ 2;
-    margin-left: 0;
+    margin-left: 50%;
     font-size: 1.7em;
   }
 }
