@@ -142,16 +142,6 @@ p {
   border-bottom: 3px solid $darkblue;
 }
 
-.uparrow {
-  float: right;
-  margin: 10px 0.8em 0 0.8em;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 11px 20px 11px;
-  border-color: transparent transparent $bluegrey transparent;
-}
-
 //--- BREAKPOINT TABLET PORTRAIT 600px
 
 @mixin about--tablet {
@@ -226,14 +216,15 @@ p {
     grid-template-columns: 1fr 1.2fr;
     grid-template-rows: auto auto auto;
     grid-gap: 0 2.5em;
-    margin: 0 auto;
-    margin-top: 3.5em;
-    width: 90vw;
+    margin: 0 85px 0 auto;
+    margin-top: 3em;
+    padding-right: 5em;
+    width: 85vw;
   }
 
   .aboutintro {
     grid-area: 1 / 2;
-    margin: 1.5em 3em auto 0;
+    margin: 1.5em 0 auto 0;
   }
 
   .div--profilebg {
@@ -245,14 +236,17 @@ p {
     margin-top: 3em;
   }
 
-  .profilelinks a {
-    font-size: 1.5em;
+  .profilelinks {
+    width: 100%;
+    a {
+      font-size: 1.4em;
+    }
   }
 
   .div--understanding {
     grid-area: 2 / 2;
     width: auto;
-    margin: 0 3em auto 0;
+    margin: 0 0 auto 0;
 
     h3 {
       margin-top: 1.3em;
@@ -261,7 +255,7 @@ p {
 
     h4 {
       margin-top: 2em;
-      font-size: 1.4em;
+      font-size: 1.3em;
     }
 
     .gridbox {
@@ -278,6 +272,11 @@ p {
         font-size: 0.75em;
       }
     }
+
+    .p--explanation {
+      font-size: 1.3em;
+      min-height: 190px;
+    }
   }
 
   .icons {
@@ -288,6 +287,7 @@ p {
   .seeyou {
     grid-area: 3/ 2;
     margin-left: 50%;
+    margin-right: -3em;
     font-size: 1.7em;
   }
 }
@@ -295,4 +295,13 @@ p {
 //--- BREAKPOINT DESKTOP width 1550px
 
 @mixin about--desktop {
+  .profilelinks a {
+    font-size: 1.6em;
+  }
+
+  .seeyou {
+    font-size: 2em;
+    margin-right: -2.6em;
+    margin-bottom: 1em;
+  }
 }

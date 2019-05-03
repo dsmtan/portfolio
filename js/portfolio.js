@@ -33,14 +33,14 @@ function navInit() {
 function navlinkClicked(event) {
   event.preventDefault();
   if (event.target.id === "homelink" || event.target.id === "homeside") {
-    indexSection.scrollIntoView();
+    indexSection.scrollIntoView({ behavior: "smooth" });
   } else if (event.target.id === "pflink" || event.target.id === "pfside") {
-    pfSection.scrollIntoView();
+    pfSection.scrollIntoView({ behavior: "smooth" });
   } else if (
     event.target.id === "aboutlink" ||
     event.target.id === "aboutside"
   ) {
-    aboutSection.scrollIntoView();
+    aboutSection.scrollIntoView({ behavior: "smooth" });
   }
   closeNav();
 }
@@ -56,15 +56,14 @@ function closeNav() {
 }
 
 function gotoTop() {
-  indexSection.scrollIntoView();
+  indexSection.scrollIntoView({ behavior: "smooth" });
 }
 
 // SIDE NAV -- when bottom of page is reached hide navarrow
 const downArrow = document.querySelector(".navarrow");
 
 window.onscroll = function(ev) {
-  console.log(window.scrollY);
-  if (window.innerHeight + window.scrollY >= document.body.scrollHeight) {
+  if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 50) {
     downArrow.classList.add("hide");
   } else {
     downArrow.classList.remove("hide");

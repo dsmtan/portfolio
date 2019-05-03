@@ -108,6 +108,17 @@ button > a {
   right: 4%;
 }
 
+.uparrow {
+  float: right;
+  margin: 10px 13px 0 0.8em;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 11px 20px 11px;
+  border-color: transparent transparent #c4d5e0 transparent;
+  cursor: pointer;
+}
+
 /*----------------------------------*\ 
     INDEX SECTION MOBILE FIRST
 \*----------------------------------*/
@@ -441,16 +452,6 @@ p {
   border-bottom: 3px solid #0c2f44;
 }
 
-.uparrow {
-  float: right;
-  margin: 10px 0.8em 0 0.8em;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 11px 20px 11px;
-  border-color: transparent transparent #c4d5e0 transparent;
-}
-
 @media (min-width: 600px) and (max-width: 1100px) and (orientation: portrait) {
   .nav--mobile {
     width: 50%;
@@ -574,8 +575,8 @@ p {
   .nav--side {
     display: block;
   }
-  #profileimg {
-    background-image: url(../images/aboutprofile.png);
+  .section--portfolio .uparrow {
+    margin-right: 110px;
   }
   .headertext {
     font-size: 3.2em;
@@ -670,15 +671,16 @@ p {
     -ms-grid-rows: auto auto auto;
         grid-template-rows: auto auto auto;
     grid-gap: 0 2.5em;
-    margin: 0 auto;
-    margin-top: 3.5em;
-    width: 90vw;
+    margin: 0 85px 0 auto;
+    margin-top: 3em;
+    padding-right: 5em;
+    width: 85vw;
   }
   .aboutintro {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: 1 / 2;
-    margin: 1.5em 3em auto 0;
+    margin: 1.5em 0 auto 0;
   }
   .div--profilebg {
     -ms-grid-row: 1;
@@ -691,15 +693,18 @@ p {
     background-position: center 0px;
     margin-top: 3em;
   }
+  .profilelinks {
+    width: 100%;
+  }
   .profilelinks a {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
   .div--understanding {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: 2 / 2;
     width: auto;
-    margin: 0 3em auto 0;
+    margin: 0 0 auto 0;
   }
   .div--understanding h3 {
     margin-top: 1.3em;
@@ -707,7 +712,7 @@ p {
   }
   .div--understanding h4 {
     margin-top: 2em;
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
   .div--understanding .grid--iconwrapper {
     -ms-grid-columns: 85px 95px 85px;
@@ -721,6 +726,10 @@ p {
   .div--understanding .grid--iconwrapper h5 {
     font-size: 0.75em;
   }
+  .div--understanding .p--explanation {
+    font-size: 1.3em;
+    min-height: 190px;
+  }
   .icons {
     height: 75px;
     width: 75px;
@@ -730,6 +739,7 @@ p {
     -ms-grid-column: 2;
     grid-area: 3/ 2;
     margin-left: 50%;
+    margin-right: -3em;
     font-size: 1.7em;
   }
 }
@@ -744,8 +754,8 @@ p {
   .nav--side {
     display: block;
   }
-  #profileimg {
-    background-image: url(../images/aboutprofile.png);
+  .section--portfolio .uparrow {
+    margin-right: 110px;
   }
   .headertext {
     font-size: 3.2em;
@@ -942,15 +952,16 @@ p {
     -ms-grid-rows: auto auto auto;
         grid-template-rows: auto auto auto;
     grid-gap: 0 2.5em;
-    margin: 0 auto;
-    margin-top: 3.5em;
-    width: 90vw;
+    margin: 0 85px 0 auto;
+    margin-top: 3em;
+    padding-right: 5em;
+    width: 85vw;
   }
   .aboutintro {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: 1 / 2;
-    margin: 1.5em 3em auto 0;
+    margin: 1.5em 0 auto 0;
   }
   .div--profilebg {
     -ms-grid-row: 1;
@@ -963,15 +974,18 @@ p {
     background-position: center 0px;
     margin-top: 3em;
   }
+  .profilelinks {
+    width: 100%;
+  }
   .profilelinks a {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
   .div--understanding {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: 2 / 2;
     width: auto;
-    margin: 0 3em auto 0;
+    margin: 0 0 auto 0;
   }
   .div--understanding h3 {
     margin-top: 1.3em;
@@ -979,7 +993,7 @@ p {
   }
   .div--understanding h4 {
     margin-top: 2em;
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
   .div--understanding .grid--iconwrapper {
     -ms-grid-columns: 85px 95px 85px;
@@ -993,6 +1007,10 @@ p {
   .div--understanding .grid--iconwrapper h5 {
     font-size: 0.75em;
   }
+  .div--understanding .p--explanation {
+    font-size: 1.3em;
+    min-height: 190px;
+  }
   .icons {
     height: 75px;
     width: 75px;
@@ -1002,6 +1020,7 @@ p {
     -ms-grid-column: 2;
     grid-area: 3/ 2;
     margin-left: 50%;
+    margin-right: -3em;
     font-size: 1.7em;
   }
 }
@@ -1020,10 +1039,18 @@ p {
 
 @media (min-width: 1550px) {
   .headertext {
-    font-size: 4em;
+    font-size: 3.8em;
   }
   .div--introblock h3 {
     font-size: 2.4em;
+  }
+  .profilelinks a {
+    font-size: 1.6em;
+  }
+  .seeyou {
+    font-size: 2em;
+    margin-right: -2.6em;
+    margin-bottom: 1em;
   }
 }
 /*# sourceMappingURL=style.css.map */

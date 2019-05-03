@@ -88,6 +88,17 @@ button > a {
   right: 4%;
 }
 
+.uparrow {
+  float: right;
+  margin: 10px 13px 0 0.8em;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 11px 20px 11px;
+  border-color: transparent transparent $bluegrey transparent;
+  cursor: pointer;
+}
+
 @mixin nav--tablet {
   .nav--mobile {
     width: 50%;
@@ -109,8 +120,10 @@ button > a {
     display: block;
   }
 
-  #profileimg {
-    background-image: url(../images/aboutprofile.png);
+  .section--portfolio {
+    .uparrow {
+      margin-right: 110px;
+    }
   }
 }
 
