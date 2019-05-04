@@ -2,6 +2,7 @@
 
 window.onload = function() {
   navInit();
+  startAnimation();
   setDefaultExpl();
 };
 
@@ -69,6 +70,15 @@ window.onscroll = function(ev) {
     downArrow.classList.remove("hide");
   }
 };
+
+// --- INTRO ANIMATION --- //
+
+function startAnimation() {
+  document.querySelectorAll("polygon").forEach(triangle => {
+    triangle.classList.add("animate");
+  });
+  document.querySelector(".div--introblock").classList.add("animate");
+}
 
 // --- PORTFOLIO SECTION --- //
 

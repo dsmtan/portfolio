@@ -208,6 +208,7 @@
 
       h1 {
         font-size: 3.9em;
+        margin-left: -14px;
       }
     }
   }
@@ -242,9 +243,11 @@
     max-width: 755px;
     padding: 35px 30px;
     background-color: $yellow2;
-    transform: skew(-16deg);
     top: 40vh;
     left: calc(48vw - 58px);
+    transform: skew(-16deg);
+    transform-origin: left;
+    // -- see animation keyframes in svganimations.scss
 
     h3 {
       margin-left: 18px;
@@ -258,7 +261,7 @@
 
 @mixin index--desktop {
   .headertext {
-    font-size: 3.8em;
+    font-size: 3.3em;
   }
 
   .div--introblock h3 {
