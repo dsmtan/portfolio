@@ -201,6 +201,102 @@ button > a {
   word-wrap: break-word;
 }
 
+#svg-triangles {
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: visible;
+}
+
+#trianglegroup {
+  padding-top: 600px;
+}
+
+#bluegrey-small {
+  fill: #c4d5e0;
+  opacity: 0.52;
+  -webkit-animation: scaleTriangles 1s linear 0.1s;
+          animation: scaleTriangles 1s linear 0.1s;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+#pink-inverted {
+  fill: #ffe1d9;
+  -webkit-animation: scaleTriangles 1s linear 0.2s;
+          animation: scaleTriangles 1s linear 0.2s;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+#yellow-top {
+  fill: #d5ad39;
+  -webkit-animation: scaleTriangles 1s linear 0.3s;
+          animation: scaleTriangles 1s linear 0.3s;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+#pink-small {
+  fill: #efbaa7;
+  -webkit-animation: scaleTriangles 1s linear 0.4s;
+          animation: scaleTriangles 1s linear 0.4s;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+#pink-big {
+  fill: #efbaa7;
+  -webkit-animation: scaleTriangles 1s linear 0.5s;
+          animation: scaleTriangles 1s linear 0.5s;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+#darkblue-big {
+  fill: #0c2f44;
+  -webkit-animation: scaleTriangles 1s linear 0.6s;
+          animation: scaleTriangles 1s linear 0.6s;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+#bluegrey-big {
+  fill: #c4d5e0;
+  -webkit-animation: scaleTriangles 1s linear 0.7s;
+          animation: scaleTriangles 1s linear 0.7s;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+#grey-inverted {
+  fill: #9aabb9;
+  -webkit-animation: scaleTriangles 1s linear 0.8s;
+          animation: scaleTriangles 1s linear 0.8s;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+@-webkit-keyframes scaleTriangles {
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes scaleTriangles {
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
 /*------------------------------*\ 
   PORTFOLIO SECTION MOBILE FIRST
 \*------------------------------*/
@@ -617,15 +713,6 @@ p {
   }
   .div--trianglebackground svg {
     display: inline;
-    position: relative;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: right;
-       object-position: right;
-    height: 100%;
-    width: auto;
-    max-width: 100%;
-    max-height: 100%;
   }
   .div--introblock {
     width: 45vw;
@@ -796,15 +883,6 @@ p {
   }
   .div--trianglebackground svg {
     display: inline;
-    position: relative;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: right;
-       object-position: right;
-    height: 100%;
-    width: auto;
-    max-width: 100%;
-    max-height: 100%;
   }
   .div--introblock {
     width: 45vw;

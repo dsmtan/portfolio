@@ -1,0 +1,71 @@
+#svg-triangles {
+  position: relative;
+  object-fit: cover;
+  object-position: right;
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: visible;
+}
+
+#trianglegroup {
+  padding-top: 600px;
+}
+
+//original viewBox="0 0 605.394 683.127"
+
+#bluegrey-small {
+  fill: $bluegrey;
+  opacity: 0.52;
+  animation: scaleTriangles 1s linear 0.1s;
+  transform-origin: center;
+}
+
+#pink-inverted {
+  fill: #ffe1d9;
+  animation: scaleTriangles 1s linear 0.2s;
+  transform-origin: center;
+}
+
+#yellow-top {
+  fill: $yellow;
+  animation: scaleTriangles 1s linear 0.3s;
+  transform-origin: center;
+}
+
+#pink-small {
+  fill: $pink;
+  animation: scaleTriangles 1s linear 0.4s;
+  transform-origin: center;
+}
+
+#pink-big {
+  fill: $pink;
+  animation: scaleTriangles 1s linear 0.5s;
+  transform-origin: center;
+}
+
+#darkblue-big {
+  fill: $darkblue;
+  animation: scaleTriangles 1s linear 0.6s;
+  transform-origin: center;
+}
+
+#bluegrey-big {
+  fill: $bluegrey;
+  animation: scaleTriangles 1s linear 0.7s;
+  transform-origin: center;
+}
+
+#grey-inverted {
+  fill: #9aabb9;
+  animation: scaleTriangles 1s linear 0.8s;
+  transform-origin: center;
+}
+
+@keyframes scaleTriangles {
+  50% {
+    transform: scale(1.2);
+  }
+}

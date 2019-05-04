@@ -185,7 +185,7 @@
   }
 }
 
-//--- BREAKPOINT width 1100px - 1550px
+//--- BREAKPOINT LAPTOP
 
 @mixin index--laptop {
   .headertext {
@@ -222,6 +222,7 @@
 
   .div--trianglebackground {
     background: none;
+
     display: block;
     height: 83vh;
     min-height: none;
@@ -233,13 +234,6 @@
 
     svg {
       display: inline;
-      position: relative;
-      object-fit: cover;
-      object-position: right;
-      height: 100%;
-      width: auto;
-      max-width: 100%;
-      max-height: 100%;
     }
   }
 
