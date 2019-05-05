@@ -63,23 +63,38 @@
   transform-origin: right top;
   transform: rotate(90deg) translateX(100%);
   z-index: 100;
-}
 
-.nav--side > button {
-  font-family: $mainfont;
-  background-color: transparent;
-  border: none;
-  padding: 1.2em 1.5em;
-  margin: 0 1em;
-  margin-top: 10px;
-}
+  button {
+    font-family: $mainfont;
+    background-color: transparent;
+    border: none;
+    padding: 1.2em 1.5em;
+    margin: 0 1em;
+    margin-top: 10px;
 
-button > a {
-  text-decoration: none;
-  color: $darkblue;
-  font-size: 1.7em;
-  font-weight: 400;
-  padding: 10px 0;
+    a {
+      text-decoration: none;
+      color: $darkblue;
+      font-size: 2em;
+      font-weight: 400;
+      padding: 10px 0 0 0;
+      border-bottom: 0px solid #9aabb9;
+      transition: border-bottom 0.3s;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 3px;
+        background: #9aabb9;
+        transition: width 0.1s;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
 }
 
 .navarrow {

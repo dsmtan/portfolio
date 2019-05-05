@@ -85,7 +85,7 @@ body {
   z-index: 100;
 }
 
-.nav--side > button {
+.nav--side button {
   font-family: "brandon-grotesque", sans-serif;
   background-color: transparent;
   border: none;
@@ -94,12 +94,29 @@ body {
   margin-top: 10px;
 }
 
-button > a {
+.nav--side button a {
   text-decoration: none;
   color: #0c2f44;
-  font-size: 1.7em;
+  font-size: 2em;
   font-weight: 400;
-  padding: 10px 0;
+  padding: 10px 0 0 0;
+  border-bottom: 0px solid #9aabb9;
+  -webkit-transition: border-bottom 0.3s;
+  transition: border-bottom 0.3s;
+}
+
+.nav--side button a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #9aabb9;
+  -webkit-transition: width 0.1s;
+  transition: width 0.1s;
+}
+
+.nav--side button a:hover::after {
+  width: 100%;
 }
 
 .navarrow {
@@ -231,8 +248,8 @@ button > a {
 }
 
 #pink-big.animate {
-  -webkit-animation: scaleTriangles 0.6s ease-in 0.6s;
-          animation: scaleTriangles 0.6s ease-in 0.6s;
+  -webkit-animation: scaleTriangles 0.6s ease-in 0.7s;
+          animation: scaleTriangles 0.6s ease-in 0.7s;
   -webkit-transform-origin: 25% 40%;
           transform-origin: 25% 40%;
 }
@@ -242,8 +259,8 @@ button > a {
 }
 
 #pink-small.animate {
-  -webkit-animation: scaleTriangles 0.6s ease-in 0.7s;
-          animation: scaleTriangles 0.6s ease-in 0.7s;
+  -webkit-animation: scaleTriangles 0.6s ease-in 0.6s;
+          animation: scaleTriangles 0.6s ease-in 0.6s;
   -webkit-transform-origin: 25% 40%;
           transform-origin: 25% 40%;
 }
@@ -305,8 +322,8 @@ button > a {
 }
 
 .div--introblock {
-  -webkit-transform-origin: left 85%;
-          transform-origin: left 85%;
+  -webkit-transform-origin: 20% 75%;
+          transform-origin: 20% 75%;
 }
 
 .div--introblock.animate {
@@ -330,15 +347,15 @@ button > a {
 
 @-webkit-keyframes scaleIntro {
   50% {
-    -webkit-transform: scale(1.1) skew(-16deg);
-            transform: scale(1.1) skew(-16deg);
+    -webkit-transform: scale(1.09) skew(-16deg);
+            transform: scale(1.09) skew(-16deg);
   }
 }
 
 @keyframes scaleIntro {
   50% {
-    -webkit-transform: scale(1.1) skew(-16deg);
-            transform: scale(1.1) skew(-16deg);
+    -webkit-transform: scale(1.09) skew(-16deg);
+            transform: scale(1.09) skew(-16deg);
   }
 }
 
@@ -1166,9 +1183,6 @@ p {
 @media (min-width: 1550px) {
   .headertext {
     font-size: 3.3em;
-  }
-  .div--introblock h3 {
-    font-size: 2.4em;
   }
   .profilelinks a {
     font-size: 1.6em;

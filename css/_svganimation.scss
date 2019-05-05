@@ -24,7 +24,7 @@
   fill: $pink;
 
   &.animate {
-    animation: scaleTriangles 0.6s ease-in 0.6s;
+    animation: scaleTriangles 0.6s ease-in 0.7s;
     transform-origin: 25% 40%;
   }
 }
@@ -33,7 +33,7 @@
   fill: $pink;
 
   &.animate {
-    animation: scaleTriangles 0.6s ease-in 0.7s;
+    animation: scaleTriangles 0.6s ease-in 0.6s;
     transform-origin: 25% 40%;
   }
 }
@@ -85,7 +85,7 @@
 }
 
 .div--introblock {
-  transform-origin: left 85%;
+  transform-origin: 20% 75%;
   &.animate {
     animation: scaleIntro 0.9s ease-out 1.4s;
   }
@@ -99,6 +99,6 @@
 
 @keyframes scaleIntro {
   50% {
-    transform: scale(1.1) skew(-16deg);
+    transform: scale(1.09) skew(-16deg);
   }
 }
