@@ -14,6 +14,7 @@
   @include index--laptop;
   @include portfolio--tablet;
   @include about--laptop;
+  @include projects--laptop;
 }
 
 // -- LAPTOP SIZE  --//
@@ -23,6 +24,7 @@
   @include index--laptop;
   @include portfolio--laptop;
   @include about--laptop;
+  @include projects--laptop;
 }
 
 @media (min-height: 750px) and (orientation: landscape) {
@@ -35,4 +37,5 @@
   @include index--desktop;
   @include portfolio--desktop;
   @include about--desktop;
+  @include projects--laptop;
 }

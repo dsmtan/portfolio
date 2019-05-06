@@ -1,0 +1,52 @@
+[
+  {
+    "id": "bastard",
+    "projectheader": "Bastard Café",
+    "subheader": "REST API web app (school project)",
+    "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "projectlink": "https://exnuncdesigns.com/kea/sem2/bastardcafe/index.html",
+    "mainimage": "url",
+    "skills": ["applied", "skills", "list"],
+    "longdescription": "<p>looooooong description could include images</p>"
+  },
+  {
+    "id": "volt",
+    "projectheader": "Volt for Roskilde Festival",
+    "subheader": "Program + Design Purchase Flow (school project)",
+    "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "projectlink": "url",
+    "mainimage": "url",
+    "skills": ["applied", "skills", "list"],
+    "longdescription": "<p>looooooong description could include images</p>"
+  },
+  {
+    "id": "playground",
+    "projectheader": "JS/REACT Playground",
+    "subheader": "Small projects I played around with",
+    "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "projectlink": "url",
+    "mainimage": "url",
+    "skills": ["applied", "skills", "list"],
+    "longdescription": "<p>looooooong description could include images</p>"
+  },
+  {
+    "id": "crazystupid",
+    "projectheader": "Crazy Stupid Love",
+    "subheader": "Interactive animation story based on a movie",
+    "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "projectlink": "url",
+    "mainimage": "url",
+    "skills": ["applied", "skills", "list"],
+    "longdescription": "<p>looooooong description could include images</p>"
+  },
+  {
+    "id": "waaay",
+    "projectheader": "Waaay",
+    "subheader": "Business Concept and Design",
+    "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "projectlink": "url",
+    "mainimage": "url",
+    "skills": ["applied", "skills", "list"],
+    "longdescription": "<p>looooooong description could include images</p>"
+  }
+]

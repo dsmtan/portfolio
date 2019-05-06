@@ -1,0 +1,19 @@
+/*----------------------------------*\ 
+    PROJECT PAGE MOBILE FIRST
+\*----------------------------------*/
+
+article.project {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 2em;
+}
+
+@mixin projects--laptop {
+  article.project {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto auto;
+    grid-gap: 2em;
+  }
+}

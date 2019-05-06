@@ -3,6 +3,7 @@
 window.onload = function() {
   navInit();
   startAnimation();
+  saveProject();
   setDefaultExpl();
 };
 
@@ -93,6 +94,50 @@ function startAnimation() {
 }
 
 // --- PORTFOLIO SECTION --- //
+
+//when user clicks on project: chosenProject is stored locally
+let chosenProject = {
+  projectname: "bastard" //default
+};
+
+window.localStorage.setItem("project", JSON.stringify(chosenProject));
+
+//eventlisteners to clicked project + save in localstorage
+function saveProject() {
+  document.addEventListener(
+    "click",
+    function(event) {
+      if (event.target.classList.contains("bastard")) {
+        chosenProject.projectname = "bastard";
+        window.localStorage.setItem("project", JSON.stringify(chosenProject));
+        window.location.href = "projects.html";
+      } else if (event.target.classList.contains("volt")) {
+        chosenProject.projectname = "volt";
+        window.localStorage.setItem("project", JSON.stringify(chosenProject));
+        window.location.href = "projects.html";
+      } else if (event.target.classList.contains("playground")) {
+        chosenProject.projectname = "playground";
+        window.localStorage.setItem("project", JSON.stringify(chosenProject));
+        window.location.href = "projects.html";
+      } else if (event.target.classList.contains("crazystupid")) {
+        chosenProject.projectname = "crazystupid";
+        window.localStorage.setItem("project", JSON.stringify(chosenProject));
+        window.location.href = "projects.html";
+      } else if (event.target.classList.contains("waaay")) {
+        chosenProject.projectname = "waaay";
+        window.localStorage.setItem("project", JSON.stringify(chosenProject));
+        window.location.href = "projects.html";
+      }
+
+      // console.log(localStorage.getItem("project"));
+    },
+    false
+  );
+}
+
+//mobile: whole article is eventlistener
+//laptop: titlelayer is eventlistener
+//save chosenProject in localstorage
 
 // --- ABOUT SECTION ---//
 

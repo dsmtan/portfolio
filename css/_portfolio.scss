@@ -70,7 +70,7 @@ article {
   }
 }
 
-//--- BREAKPOINT TABLET width 600px
+//--- BREAKPOINT TABLET PORTRAIT width 600px
 
 @mixin portfolio--tablet {
   .grid--pfwrapper {
@@ -181,7 +181,4 @@ article {
   }
 }
 
-//--- BREAKPOINT width 1550px
-
-@mixin portfolio--desktop {
-}
+//--- BREAKPOINT DESKTOP width 1550px
