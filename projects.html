@@ -17,31 +17,63 @@
     <link rel="stylesheet" href="https://use.typekit.net/wxs3hfe.css" />
   </head>
   <body id="projectbody">
-    <header>
-      <a class="backlink" href="index.html"> -- BACK</a>
-      <a class="backlink" href="index.html"> -- NEXT</a>
-      <h2 class="headertext">My Projects</h2>
+    <nav class="nav--mobile">
+      <a href="javascript:void(0)" class="closebtn">&times;</a>
+      <div class="overlay-content">
+        <a id="homelink" class="navlink" href="#">Home</a>
+        <a id="pflink" class="navlink" href="#portfolioSection">Portfolio</a>
+        <a id="aboutlink" class="navlink" href="#aboutSection">About Me</a>
+      </div>
+    </nav>
+
+    <nav class="nav--side" id="sidenav">
+      <button>
+        <a id="homeside" class="navlink" href="index.html">HOME</a>
+      </button>
+      <button>
+        <a id="pfside" class="navlink" href="index.html#pfsection">PORTFOLIO</a>
+      </button>
+      <button>
+        <a id="aboutside" class="navlink" href="index.html#aboutsection"
+          >ABOUT ME</a
+        >
+      </button>
+    </nav>
+
+    <header class="header--projects">
+      <h2 class="headertext">
+        Projects by Denise Tan
+        <img class="burgermenu" src="images/burgermenu.svg" />
+      </h2>
     </header>
 
-    <div class="grid--project"><!-- append template here --></div>
+    <main class="grid--project"><!-- append template here --></main>
+
+    <a class="backlink" href="index.html#pfsection"> -- BACK</a>
+    <a class="backlink" href="index.html"> -- NEXT</a>
 
     <template id="projectTemplate">
       <article class="project">
         <div class="project--intro">
-          <h3 id="projectname">Project Name</h3>
+          <h3 id="projectname" class="headertext">Project Name</h3>
           <h5 id="subheader"></h5>
           <p id="projectintro"></p>
           <a id="projectlink" href="" target="_blank">Link to project</a>
         </div>
-        <div class="project--image">Hi I'm the main image</div>
+        <div class="project--image">
+          <img id="image" src="" />
+        </div>
         <div class="project--skills">
-          List of skills applied
+          <h4>Skills</h4>
+          <ul id="skillslist"></ul>
         </div>
         <div class="project-description">Blablabla I did this</div>
       </article>
     </template>
 
     <!-- <script src="js/main.js"></script> -->
+
     <script src="js/projects.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
   </body>
 </html>

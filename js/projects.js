@@ -1,13 +1,15 @@
 "use strict";
 
+//--- FOR PROJECTS.HTML ---//
+
 let shownProject;
 
 window.onload = function() {
-  //get chosen project from local
+  //get user chosen project from local
   shownProject = JSON.parse(window.localStorage.getItem("project"));
   console.log(shownProject.projectname);
 
-  //get JSON data to create template
+  //get all projectdata from JSON
   fetch("js/projectdata.json")
     .then(res => res.json())
     .then(projectdata => {
@@ -15,7 +17,7 @@ window.onload = function() {
     });
 };
 
-//-- function create template for each project in JSON
+//find chosen project in JSON
 
 function findProject(projectArray, projectName) {
   let chosenProject = projectArray.find(obj => obj.id === projectName);
@@ -23,11 +25,12 @@ function findProject(projectArray, projectName) {
   fillTemplate(chosenProject);
 }
 
+//populate template with chosen project info + append
+
 const template = document.querySelector("#projectTemplate").content;
 const projectGrid = document.querySelector(".grid--project");
 
 function fillTemplate(project) {
-  console.log(project.id);
   const copy = template.cloneNode(true);
   let article = copy.querySelector("article");
   article.id = project.id;
@@ -36,8 +39,12 @@ function fillTemplate(project) {
   copy.querySelector("#subheader").textContent = project.subheader;
   copy.querySelector("#projectintro").textContent = project.introduction;
   copy.querySelector("#projectlink").href = project.projectlink;
+  copy.querySelector("#skillslist").innerHTML = project.skills;
+
+  copy.querySelector(".project--image > img").src = `${project.mainimage}`;
+
+  copy.querySelector(".project-description").innerHTML =
+    project.longdescription;
 
   projectGrid.appendChild(copy);
 }
-
-//-- append + show chosen project

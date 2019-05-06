@@ -3,10 +3,10 @@
     "id": "bastard",
     "projectheader": "Bastard Café",
     "subheader": "REST API web app (school project)",
-    "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    "introduction": "The assignment was to design and develop a persona driven mobile web app (prototype) for Bastard Café, a well-known café with over 2.000 board games in Copenhagen. ",
     "projectlink": "https://exnuncdesigns.com/kea/sem2/bastardcafe/index.html",
-    "mainimage": "url",
-    "skills": ["applied", "skills", "list"],
+    "mainimage": "../images/bastardmockup.png",
+    "skills": "<li>HTML & CSS</li> <li>JavaScript</li> <li>REST API</li> <li>Wordpress</li><li>UX Design</li><li>Adobe Illustrator</li>",
     "longdescription": "<p>looooooong description could include images</p>"
   },
   {
@@ -14,9 +14,9 @@
     "projectheader": "Volt for Roskilde Festival",
     "subheader": "Program + Design Purchase Flow (school project)",
     "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "projectlink": "url",
-    "mainimage": "url",
-    "skills": ["applied", "skills", "list"],
+    "projectlink": "https://exnuncdesigns.com/kea/sem3/volt/purchase-flow/flow-start.html",
+    "mainimage": "../images/voltmockup.png",
+    "skills": "<li>HTML</li> <li>CSS</li> <li>JavaScript</li> <li>REST API</li> <li>Wordpress</li>",
     "longdescription": "<p>looooooong description could include images</p>"
   },
   {
@@ -25,28 +25,28 @@
     "subheader": "Small projects I played around with",
     "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "projectlink": "url",
-    "mainimage": "url",
-    "skills": ["applied", "skills", "list"],
+    "mainimage": "../images/playground.png",
+    "skills": "<li>HTML</li> <li>CSS</li> <li>JavaScript</li> <li>REST API</li> <li>Wordpress</li>",
     "longdescription": "<p>looooooong description could include images</p>"
   },
   {
     "id": "crazystupid",
     "projectheader": "Crazy Stupid Love",
     "subheader": "Interactive animation story based on a movie",
-    "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "projectlink": "url",
-    "mainimage": "url",
-    "skills": ["applied", "skills", "list"],
-    "longdescription": "<p>looooooong description could include images</p>"
+    "introduction": "Group assignment: we had to create an interactive animation based on a movie scene in punk style. We recreated a scene from Crazy Stupid Love and it was targeted at young female adults who love Ryan Gosling.",
+    "projectlink": "https://exnuncdesigns.com/kea/01-web/animation/project/crazystupidlove.html",
+    "mainimage": "../images/crazymockup.png",
+    "skills": "<li>HTML</li> <li>CSS</li> <li>JavaScript</li>",
+    "longdescription": "<p>I was responsible for creating the story and coding the whole animation in HTML, CSS and JS.</p>"
   },
   {
     "id": "waaay",
     "projectheader": "Waaay",
     "subheader": "Business Concept and Design",
-    "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "projectlink": "url",
-    "mainimage": "url",
-    "skills": ["applied", "skills", "list"],
-    "longdescription": "<p>looooooong description could include images</p>"
+    "introduction": "Group assignment: we created an innovative concept for an app that generates routes off your beaten paths curated to your personal interests. ",
+    "projectlink": "https://exnuncdesigns.com/kea/04-ux/waaay/index.html",
+    "mainimage": "../images/waaaymockup.png",
+    "skills": "<li>HTML</li> <li>CSS</li> <li>JavaScript</li>",
+    "longdescription": "<p>I was responsible for writing the report, developing the business model and communication plan, and prototyping and coding the website.</p>"
   }
 ]

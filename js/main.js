@@ -135,10 +135,6 @@ function saveProject() {
   );
 }
 
-//mobile: whole article is eventlistener
-//laptop: titlelayer is eventlistener
-//save chosenProject in localstorage
-
 // --- ABOUT SECTION ---//
 
 //JSON object for different explanation texts

@@ -2,18 +2,80 @@
     PROJECT PAGE MOBILE FIRST
 \*----------------------------------*/
 
+.header--projects {
+  border-bottom: 3px solid $yellow;
+  margin: 1.5em 0 3em 40%;
+
+  h2 {
+    font-size: 2.5em;
+  }
+}
+
 article.project {
+  width: 90vw;
+  height: auto;
+  max-width: 1200px;
+  margin: 2em auto;
+  background: transparent;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-gap: 2em;
+  grid-gap: 1em;
+  cursor: default;
+
+  > div {
+    background-color: #c4d5e060;
+    padding: 2em;
+  }
+
+  h3 {
+    font-size: 2em;
+    font-weight: 400;
+  }
+
+  h5 {
+    font-weight: 400;
+    font-size: 1.3em;
+    margin: 0.5em 0 1em;
+  }
+
+  p {
+    font-size: 1.2em;
+    margin: 1em 0;
+  }
+
+  h4 {
+    font-weight: 500;
+    font-size: 1.3em;
+    margin: 0.5em 0 1em;
+    text-transform: uppercase;
+  }
+
+  a {
+    text-decoration: none;
+    color: $yellow;
+    font-size: 1.5em;
+  }
+
+  li {
+    font-size: 1.2em;
+  }
+}
+
+.project--image {
+  min-height: 40vh;
+  @include flexCenter;
+
+  img {
+    max-height: 100%;
+  }
 }
 
 @mixin projects--laptop {
   article.project {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1.5fr 3fr;
     grid-template-rows: auto auto;
-    grid-gap: 2em;
+    grid-gap: 1em;
   }
 }
