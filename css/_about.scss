@@ -50,7 +50,7 @@ p {
   transform: rotate(-14.5deg);
   transform-origin: right bottom;
   position: relative;
-  top: 10px;
+  top: 6px;
 
   a {
     display: inline;
@@ -164,6 +164,10 @@ p {
     width: 335px;
   }
 
+  .profilelinks {
+    top: 0.8em;
+  }
+
   .div--understanding {
     grid-area: 2 / 1 / 3 / span 2;
     width: 60%;
@@ -241,6 +245,7 @@ p {
 
   .profilelinks {
     width: 100%;
+    top: 0.7em;
     a {
       font-size: 1.4em;
     }
@@ -298,8 +303,11 @@ p {
 //--- BREAKPOINT DESKTOP width 1550px
 
 @mixin about--desktop {
-  .profilelinks a {
-    font-size: 1.6em;
+  .profilelinks {
+    top: 0.4em;
+    a {
+      font-size: 1.6em;
+    }
   }
 
   .seeyou {

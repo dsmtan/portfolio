@@ -34,9 +34,17 @@ function navInit() {
 function navlinkClicked(event) {
   event.preventDefault();
   if (event.target.id === "homelink" || event.target.id === "homeside") {
-    indexSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    indexSection.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest"
+    });
   } else if (event.target.id === "pflink" || event.target.id === "pfside") {
-    pfSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    pfSection.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest"
+    });
   } else if (
     event.target.id === "aboutlink" ||
     event.target.id === "aboutside"
