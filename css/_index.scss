@@ -246,12 +246,22 @@
     top: 40vh;
     left: calc(48vw - 58px);
     transform: skew(-16deg);
-    // -- see animation keyframes in svganimations.scss
+    transform-origin: 25% 65%;
+
+    &.animate {
+      animation: scaleIntro 0.8s ease-out 1.4s;
+    }
 
     h3 {
       margin-left: 18px;
       font-size: 2em;
       transform: skew(16deg);
+    }
+  }
+
+  @keyframes scaleIntro {
+    50% {
+      transform: scale(1.09) skew(-16deg);
     }
   }
 }

@@ -34,14 +34,18 @@ function navInit() {
 function navlinkClicked(event) {
   event.preventDefault();
   if (event.target.id === "homelink" || event.target.id === "homeside") {
-    indexSection.scrollIntoView({ behavior: "smooth" });
+    indexSection.scrollIntoView({ behavior: "smooth", block: "start" });
   } else if (event.target.id === "pflink" || event.target.id === "pfside") {
-    pfSection.scrollIntoView({ behavior: "smooth" });
+    pfSection.scrollIntoView({ behavior: "smooth", block: "start" });
   } else if (
     event.target.id === "aboutlink" ||
     event.target.id === "aboutside"
   ) {
-    aboutSection.scrollIntoView({ behavior: "smooth" });
+    aboutSection.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest"
+    });
   }
   closeNav();
 }
@@ -57,7 +61,7 @@ function closeNav() {
 }
 
 function gotoTop() {
-  indexSection.scrollIntoView({ behavior: "smooth" });
+  window.scroll({ top: 0, left: 0, behavior: "smooth" });
 }
 
 // SIDE NAV -- when bottom of page is reached hide navarrow

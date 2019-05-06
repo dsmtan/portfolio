@@ -84,21 +84,8 @@
   }
 }
 
-.div--introblock {
-  transform-origin: 20% 75%;
-  &.animate {
-    animation: scaleIntro 0.9s ease-out 1.4s;
-  }
-}
-
 @keyframes scaleTriangles {
   50% {
-    transform: scale(1.09);
-  }
-}
-
-@keyframes scaleIntro {
-  50% {
-    transform: scale(1.09) skew(-16deg);
+    transform: scale(1.08);
   }
 }
