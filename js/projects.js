@@ -28,7 +28,7 @@ function findProject(projectArray, projectName) {
 //populate template with chosen project info + append
 
 const template = document.querySelector("#projectTemplate").content;
-const projectGrid = document.querySelector(".grid--project");
+const main = document.querySelector(".main--project");
 
 function fillTemplate(project) {
   const copy = template.cloneNode(true);
@@ -46,5 +46,5 @@ function fillTemplate(project) {
   copy.querySelector(".project-description").innerHTML =
     project.longdescription;
 
-  projectGrid.appendChild(copy);
+  main.appendChild(copy);
 }

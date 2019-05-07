@@ -4,7 +4,7 @@
 
 .header--projects {
   border-bottom: 3px solid $yellow;
-  margin: 1.5em 0 3em 40%;
+  margin: 1.5em 0 3em 55%;
 
   h2 {
     font-size: 2.5em;
@@ -60,6 +60,13 @@ article.project {
   li {
     font-size: 1.2em;
   }
+
+  a.backlink {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: $yellow;
+    margin: 1em 2em 1em 0;
+  }
 }
 
 .project--image {
@@ -69,6 +76,17 @@ article.project {
   img {
     max-height: 100%;
   }
+}
+
+.backarrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 12px solid $yellow;
+  margin-right: 0.8em;
+  margin-bottom: -1px;
 }
 
 @mixin projects--laptop {
