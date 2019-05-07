@@ -4,10 +4,10 @@
 
 .header--projects {
   border-bottom: 3px solid $yellow;
-  margin: 1.5em 0 3em 55%;
+  margin: 1.5em 0 3em 10%;
 
   h2 {
-    font-size: 2.5em;
+    font-size: 2.3em;
   }
 }
 
@@ -90,6 +90,13 @@ article.project {
 }
 
 @mixin projects--laptop {
+  .header--projects {
+    margin: 1.5em 0 3em 50%;
+    h2 {
+      font-size: 2.5em;
+    }
+  }
+
   article.project {
     display: grid;
     grid-template-columns: 1.5fr 3fr;

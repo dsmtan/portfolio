@@ -598,11 +598,11 @@ p {
 \*----------------------------------*/
 .header--projects {
   border-bottom: 3px solid #d5ad39;
-  margin: 1.5em 0 3em 55%;
+  margin: 1.5em 0 3em 10%;
 }
 
 .header--projects h2 {
-  font-size: 2.5em;
+  font-size: 2.3em;
 }
 
 article.project {
@@ -827,10 +827,18 @@ article.project a.backlink {
   .headertext {
     font-size: 3.2em;
   }
-  section {
+  #indexbody {
+    overflow-y: scroll;
+    -ms-scroll-snap-type: y mandatory;
+        scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+  #indexbody section {
     display: block;
     min-height: 100vh;
     margin: 0;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
   }
   .section--index {
     top: 0;
@@ -1002,6 +1010,12 @@ article.project a.backlink {
   .seeyou .uparrow {
     margin-top: 14px;
   }
+  .header--projects {
+    margin: 1.5em 0 3em 50%;
+  }
+  .header--projects h2 {
+    font-size: 2.5em;
+  }
   article.project {
     display: -ms-grid;
     display: grid;
@@ -1030,10 +1044,18 @@ article.project a.backlink {
   .headertext {
     font-size: 3.2em;
   }
-  section {
+  #indexbody {
+    overflow-y: scroll;
+    -ms-scroll-snap-type: y mandatory;
+        scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+  #indexbody section {
     display: block;
     min-height: 100vh;
     margin: 0;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
   }
   .section--index {
     top: 0;
@@ -1308,6 +1330,12 @@ article.project a.backlink {
   .seeyou .uparrow {
     margin-top: 14px;
   }
+  .header--projects {
+    margin: 1.5em 0 3em 50%;
+  }
+  .header--projects h2 {
+    font-size: 2.5em;
+  }
   article.project {
     display: -ms-grid;
     display: grid;
@@ -1461,6 +1489,12 @@ article.project a.backlink {
   }
   .seeyou .uparrow {
     margin-top: 20px;
+  }
+  .header--projects {
+    margin: 1.5em 0 3em 50%;
+  }
+  .header--projects h2 {
+    font-size: 2.5em;
   }
   article.project {
     display: -ms-grid;

@@ -192,10 +192,18 @@
     font-size: 3.2em;
   }
 
-  section {
-    display: block;
-    min-height: 100vh;
-    margin: 0;
+  #indexbody {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+
+    section {
+      display: block;
+      min-height: 100vh;
+      margin: 0;
+      scroll-snap-align: start;
+      scroll-behavior: smooth;
+    }
   }
 
   .section--index {

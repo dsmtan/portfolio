@@ -203,6 +203,9 @@ p {
 //--- BREAKPOINT LAPTOP 1100px
 
 @mixin about--laptop {
+  .section--about {
+  }
+
   p {
     font-size: 1.4em;
   }
