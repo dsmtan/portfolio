@@ -43,7 +43,7 @@ function fillTemplate(project) {
 
   copy.querySelector(".project--image > img").src = `${project.mainimage}`;
 
-  copy.querySelector(".project-description").innerHTML =
+  copy.querySelector(".project--description").innerHTML =
     project.longdescription;
 
   main.appendChild(copy);

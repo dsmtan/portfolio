@@ -7,17 +7,17 @@
     "projectlink": "https://exnuncdesigns.com/kea/sem2/bastardcafe/index.html",
     "mainimage": "images/bastardmockup.png",
     "skills": "<li>HTML & CSS</li> <li>JavaScript</li> <li>REST API</li> <li>Wordpress</li><li>UX Design</li><li>Adobe Illustrator</li>",
-    "longdescription": "<p>The main focus of this project was to create a web app that was perfectly tailored to the needs of the user, both in design as in functionality.</p><p>I did extensive target group research for Bastard Café and created a persona on whom my entire design would be based. My persona is Alexander, a 29 year old board game addict from Copenhagen, whose goals are to meet other passionate board game players who can challenge him and to try out as many new board games as possible.</p><p>Learn more about the persona of Alexander below.</p>"
+    "longdescription": "<h4>Description</h4><p>The main focus of this project was to create a web app that was perfectly tailored to the needs of the user, both in design as in functionality.</p><p>I did extensive target group research for Bastard Café and created a persona on whom my entire design would be based. My persona is a 29-year-old board game addict from Copenhagen, whose goals are to meet other passionate board game players who can challenge him and to try out as many new board games as possible.</p><h5>DESIGN</h5><p>I wanted the design to have a playful retro feel to it, that would take you back to playing board games in your childhood. I also added in references to a board game called Carcassonne with the puppets (meeples) I used prominently on the home screen navigation and more subtly throughout the app. True board game fans would recognize and appreciate the reference immediately, while to others they might just seem regular funny puppets.</p><h5>DEVELOPMENT</h5><p>The assignment required a Wordpress back-end as a CMS, so Bastard Café would hypothetically be able to maintain the content themselves. Therefore I created a logical and user-friendly data structure in Wordpress and all the data for the web app are fetched using the Wordpress REST API.</p>"
   },
   {
     "id": "volt",
-    "projectheader": "Volt for Roskilde Festival",
+    "projectheader": "Volt",
     "subheader": "Purchase flow and landing page (school project)",
-    "introduction": "Volt is a company that provides a powerbank swapping service at festivals.",
+    "introduction": "Volt is a company that provides a powerbank swapping service at festivals. They wanted to lower the bounce rate on their Roskilde Festival landing page and high rate of users abandoning their basket. In a pair, we redesigned their landing page and purchase flow.",
     "projectlink": "https://exnuncdesigns.com/kea/sem3/volt/purchase-flow/flow-start.html",
     "mainimage": "images/voltmockup.png",
-    "skills": "<li>HTML</li> <li>CSS</li> <li>JavaScript</li> <li>REST API</li> <li>Wordpress</li>",
-    "longdescription": "<p>looooooong description could include images</p>"
+    "skills": "<li>HTML</li> <li>CSS</li> <li>JavaScript</li> <li>REST API</li> <li>UX</li><li>Design Sprint</li><li>Video</li>",
+    "longdescription": "<h4>Description</h4><p>After the meeting with Volt, we started the project by analyzing the current status and data of the landing page and purchase flow. Subsequently, we had a Design Sprint of 5 days to come to the first iteration of the new landing page prototype. I focused mostly on envisioning marketing solutions for the redesign of the landing page and programming the purchase flow.</p><h5>UX & DESIGN</h5><p>We wanted to trigger the needs of Volt’s target group to make them aware of how Volt could solve some of their problems during a festival and who Volt is as a company. We wanted the design to incorporate the target group's preferences and needs in order to brand Volt as an appealing company to be associated with for them.</p><p>The landing page is redesigned to look younger and fresher than the current landing page, while showcasing the (political) values of Volt as a company. We also used video as a medium to reach the target group more effectively.</p><h5>DEVELOPMENT</h5><p>We optimized the user experience of the purchase flow to remove any reservations or limitations users might have before completing their purchase. In this process, I gained new experience in designing and programming HTML forms in relation to a NoSQL database back-end with REST API.</p>"
   },
   {
     "id": "playground",
