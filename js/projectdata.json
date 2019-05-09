@@ -5,8 +5,8 @@
     "subheader": "REST API web app (school project)",
     "introduction": "The assignment was to design and develop a persona driven mobile web app (prototype) for Bastard Café, a well-known café with over 2.000 board games in Copenhagen. ",
     "projectlink": "https://exnuncdesigns.com/kea/sem2/bastardcafe/index.html",
-    "mainimage": "images/bastardmockup.png",
-    "skills": "<li>HTML & CSS</li> <li>JavaScript</li> <li>REST API</li> <li>Wordpress</li><li>UX Design</li><li>Adobe Illustrator</li>",
+    "mainimage": "<img id=\"bastardimage\" src=\"images/bastardmockup.png\" /><div class=\"videoframe\"><video autoplay loop><source src=\"images/bastardvideo.mp4\" type=\"video/mp4\">Sorry, your browser doesn't support embedded videos.</video></div>",
+    "skills": "<li>HTML & CSS</li> <li>JavaScript</li> <li>REST API</li> <li>Wordpress</li><li>UX Research & Design</li><li>Adobe Illustrator</li>",
     "longdescription": "<h4>Description</h4><p>The main focus of this project was to create a web app that was perfectly tailored to the needs of the user, both in design as in functionality.</p><p>I did extensive target group research for Bastard Café and created a persona on whom my entire design would be based. My persona is a 29-year-old board game addict from Copenhagen, whose goals are to meet other passionate board game players who can challenge him and to try out as many new board games as possible.</p><h5>DESIGN</h5><p>I wanted the design to have a playful retro feel to it, that would take you back to playing board games in your childhood. I also added in references to a board game called Carcassonne with the puppets (meeples) I used prominently on the home screen navigation and more subtly throughout the app. True board game fans would recognize and appreciate the reference immediately, while to others they might just seem regular funny puppets.</p><h5>DEVELOPMENT</h5><p>The assignment required a Wordpress back-end as a CMS, so Bastard Café would hypothetically be able to maintain the content themselves. Therefore I created a logical and user-friendly data structure in Wordpress and all the data for the web app are fetched using the Wordpress REST API.</p>"
   },
   {
@@ -15,9 +15,9 @@
     "subheader": "Purchase flow and landing page (school project)",
     "introduction": "Volt is a company that provides a powerbank swapping service at festivals. They wanted to lower the bounce rate on their Roskilde Festival landing page and high rate of users abandoning their basket. In a pair, we redesigned their landing page and purchase flow.",
     "projectlink": "https://exnuncdesigns.com/kea/sem3/volt/purchase-flow/flow-start.html",
-    "mainimage": "images/voltmockup.png",
-    "skills": "<li>HTML</li> <li>CSS</li> <li>JavaScript</li> <li>REST API</li> <li>UX</li><li>Design Sprint</li><li>Video</li>",
-    "longdescription": "<h4>Description</h4><p>After the meeting with Volt, we started the project by analyzing the current status and data of the landing page and purchase flow. Subsequently, we had a Design Sprint of 5 days to come to the first iteration of the new landing page prototype. I focused mostly on envisioning marketing solutions for the redesign of the landing page and programming the purchase flow.</p><h5>UX & DESIGN</h5><p>We wanted to trigger the needs of Volt’s target group to make them aware of how Volt could solve some of their problems during a festival and who Volt is as a company. We wanted the design to incorporate the target group's preferences and needs in order to brand Volt as an appealing company to be associated with for them.</p><p>The landing page is redesigned to look younger and fresher than the current landing page, while showcasing the (political) values of Volt as a company. We also used video as a medium to reach the target group more effectively.</p><h5>DEVELOPMENT</h5><p>We optimized the user experience of the purchase flow to remove any reservations or limitations users might have before completing their purchase. In this process, I gained new experience in designing and programming HTML forms in relation to a NoSQL database back-end with REST API.</p>"
+    "mainimage": "<img id=\"image\" src=\"images/voltmockup.png\" />",
+    "skills": "<li>HTML</li> <li>CSS</li> <li>JavaScript</li> <li>REST API</li> <li>UX Research</li><li>Design Sprint</li><li>Video</li>",
+    "longdescription": "<h4>Description</h4><p>After the meeting with Volt, we started the project by analyzing the current status and data of the landing page and purchase flow. Subsequently, we had a Design Sprint of 5 days to come to the first iteration of the new landing page prototype. I focused mostly on envisioning marketing solutions for the redesign of the landing page and programming the purchase flow.</p><h5>UX & DESIGN</h5><p>We wanted to trigger the needs of Volt’s target group to make them aware of how Volt could solve some of their problems during a festival and who Volt is as a company. We wanted the design to incorporate the target group's preferences and needs in order to brand Volt as an appealing company to be associated with for them.</p><p>The landing page is redesigned to look younger and fresher than the current landing page, while showcasing the (political) values of Volt as a company. We also used video as a medium to reach the target group more effectively.</p><a href=\"https://xd.adobe.com/view/4799a72e-5bca-4004-7464-63ac276a7666-31a8/?fbclid=IwAR1dJAM-Qf8ceDipCyNXU1V7kcrMZlaSlGgU-SD0AJ836WOgij1shir6_0M&hints=off\">Prototype landing page</a><h5>DEVELOPMENT</h5><p>We optimized the user experience of the purchase flow to remove any reservations or limitations users might have before completing their purchase. In this process, I gained new experience in designing and programming HTML forms in relation to a NoSQL database back-end with REST API.</p>"
   },
   {
     "id": "playground",
@@ -25,28 +25,28 @@
     "subheader": "Several small projects",
     "introduction": "This is a collection of small experiments I played around with while learning JavaScript and React.",
     "projectlink": "url",
-    "mainimage": "images/playground.png",
-    "skills": " <li>JavaScript</li> <li>REST API</li> <li>Wordpress</li>",
-    "longdescription": "<p>looooooong description could include images</p>"
+    "mainimage": "<img id=\"image\" src=\"images/playground.png\" />",
+    "skills": " <li>JavaScript</li> <li>REST API</li>",
+    "longdescription": "<h4>Description</h4><p>UNDER CONSTRUCTION -- These JS experiments are purely build for functionality, without design intentions.</p><a href=\"https://dsmtan.github.io/2019_StudentList/index.html\" target=\"_blank\">Hogwarts Student List</a><a href=\"https://dsmtan.github.io/color-palette/color.html\" target=\"_blank\">Color Palette Generator</a><a href=\"https://dsmtan.github.io/picture-puzzle/puzzle.html\" target=\"_blank\">Puzzle maker from any image url</a><a href=\"https://dsmtan.github.io/2019_colorpicker/colorpicker.html\" target=\"_blank\">Color picker from image</a>"
   },
   {
     "id": "crazystupid",
     "projectheader": "Crazy Stupid Love",
     "subheader": "Interactive animation story based on a movie",
-    "introduction": "Group assignment: we had to create an interactive animation based on a movie scene in punk style. We recreated a scene from Crazy Stupid Love and it was targeted at young female adults who love Ryan Gosling.",
+    "introduction": "We had to create an interactive animation based on a movie scene in punk style. We adapted and recreated a scene from Crazy Stupid Love and chose to target it at young female adults who love Ryan Gosling.",
     "projectlink": "https://exnuncdesigns.com/kea/01-web/animation/project/crazystupidlove.html",
-    "mainimage": "images/crazymockup.png",
+    "mainimage": "<img id=\"image\" src=\"images/crazymockup.png\" />",
     "skills": "<li>HTML</li> <li>CSS</li> <li>JavaScript</li><li>Animation</li>",
-    "longdescription": "<p>I was responsible for creating the story and coding the whole animation in HTML, CSS and JS.</p>"
+    "longdescription": "<h4>Description</h4><p>We were assigned the punk style and wanted to do a funny punk remake of the movie scene of Crazy Stupid Love, where Emma Stone’s character jumps into Ryan Gosling’s arms as in Dirty Dancing. The animation is interactive and users are supposed to discover themselves how to make the story move forward.</p><p>My team members designed all the visual elements of the storyboard while I was responsible for programming the whole animation story and adding spritesheets, timing and sounds. It was my first project working with JavaScript and I found it really exciting and fun!</p>"
   },
   {
     "id": "waaay",
     "projectheader": "Waaay",
     "subheader": "Business Concept and Design",
-    "introduction": "Group assignment: we created an innovative concept for an app that generates routes off your beaten paths curated to your personal interests. ",
+    "introduction": "We created an innovative concept for a mobile app that generates routes off your beaten paths curated to your personal interests. We formed a business plan, designed the app and build a landing page to showcase it.",
     "projectlink": "https://exnuncdesigns.com/kea/04-ux/waaay/index.html",
-    "mainimage": "images/waaaymockup.png",
-    "skills": "<li>HTML</li> <li>CSS</li> <li>JavaScript</li>",
-    "longdescription": "<p>I was responsible for writing the report, developing the business model and communication plan, and prototyping and coding the website.</p>"
+    "mainimage": "<img id=\"image\" src=\"images/waaaymockup.png\" />",
+    "skills": "<li>HTML</li> <li>CSS</li> <li>UX Research & Design</li><li>Business Model Canvas</li>",
+    "longdescription": "<h4>Description</h4><p>Get off your beaten path - is the slogan of our app concept WAAAY. The app is supposed to generate an alternative route for you to discover exciting places off the beaten path, even in your own home town or on the way home from work. You can choose your interests and WAAAY will curate a route for you according to your interests, from street art, to galleries or local shops. There’s something for everyone.</p><p>We developed our app idea into a business concept a by doing market analysis, researching competitors and our target audience, creating a business model canvas and a communication plan.</p><a href='https://exnuncdesigns.com/kea/04-ux/waaay/waaay_report.pdf'>Read our business concept report</a>"
   }
 ]

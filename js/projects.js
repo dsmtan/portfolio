@@ -40,8 +40,7 @@ function fillTemplate(project) {
   copy.querySelector("#projectintro").textContent = project.introduction;
   copy.querySelector("#projectlink").href = project.projectlink;
   copy.querySelector("#skillslist").innerHTML = project.skills;
-
-  copy.querySelector(".project--image > img").src = `${project.mainimage}`;
+  copy.querySelector(".project--image").innerHTML = project.mainimage;
 
   copy.querySelector(".project--description").innerHTML =
     project.longdescription;
