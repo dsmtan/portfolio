@@ -623,7 +623,7 @@ article.project {
 }
 
 article.project > div {
-  background-color: #c4d5e060;
+  background-color: #e1e9eed3;
   padding: 1.5em;
 }
 
@@ -1029,13 +1029,8 @@ article.project a.backlink {
   .seeyou .uparrow {
     margin-top: 14px;
   }
-  .header--projects {
-    margin: 1.5em 0 3em 50%;
-  }
-  .header--projects h2 {
-    font-size: 2.5em;
-  }
   article.project {
+    width: calc(95vw - 120px);
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1.5fr 3fr;
@@ -1044,58 +1039,11 @@ article.project a.backlink {
         grid-template-rows: auto auto;
     grid-gap: 1em;
   }
-  article.project h3 {
-    font-size: 2em;
-    font-weight: 400;
-  }
-  article.project #subheader {
-    font-weight: 400;
-    font-size: 1.3em;
-    margin: 0.5em 0 1em;
-  }
-  article.project p {
-    font-size: 1.2em;
-    margin: 1em 0;
-  }
-  article.project h4 {
-    font-size: 1.3em;
-    margin: 0.5em 0 1em;
-  }
-  article.project a {
-    font-size: 1.5em;
-  }
-  article.project li {
-    font-size: 1.2em;
-  }
-  article.project a.backlink {
-    font-size: 1.2em;
-    margin: 1em 2em 1em 0;
-  }
-  .project--image {
-    height: 100%;
-  }
   .project--image img {
-    height: 100%;
-    margin: 0;
+    height: 80%;
   }
   .project--image #bastardimage {
-    margin-left: 27%;
-  }
-  .project--image .videoframe {
-    -o-object-fit: contain;
-       object-fit: contain;
-    position: relative;
-    display: inline-block;
-    height: 100%;
-    min-width: 50%;
-    max-width: 100%;
-    overflow: hidden;
-    margin-left: 2em;
-  }
-  .project--image .videoframe video {
-    position: absolute;
-    max-height: 100%;
-    border-radius: 22px;
+    margin-left: 0;
   }
 }
 
@@ -1394,6 +1342,13 @@ article.project a.backlink {
   .seeyou .uparrow {
     margin-top: 14px;
   }
+  #projectbody {
+    background-image: url(../images/lines.png);
+    background-size: 85vh;
+    background-repeat: no-repeat;
+    background-position: -15vw 30px;
+    background-attachment: fixed;
+  }
   .header--projects {
     margin: 1.5em 0 3em 50%;
   }
@@ -1401,6 +1356,7 @@ article.project a.backlink {
     font-size: 2.5em;
   }
   article.project {
+    width: 95vw;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1.5fr 3fr;
@@ -1607,6 +1563,13 @@ article.project a.backlink {
   .seeyou .uparrow {
     margin-top: 20px;
   }
+  #projectbody {
+    background-image: url(../images/lines.png);
+    background-size: 85vh;
+    background-repeat: no-repeat;
+    background-position: -15vw 30px;
+    background-attachment: fixed;
+  }
   .header--projects {
     margin: 1.5em 0 3em 50%;
   }
@@ -1614,6 +1577,7 @@ article.project a.backlink {
     font-size: 2.5em;
   }
   article.project {
+    width: 95vw;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1.5fr 3fr;

@@ -28,7 +28,7 @@ article.project {
   cursor: default;
 
   > div {
-    background-color: #c4d5e060;
+    background-color: #e1e9eed3;
     padding: 1.5em;
   }
 
@@ -119,7 +119,35 @@ article.project {
   margin-bottom: -1px;
 }
 
+@mixin projects--tablet {
+  article.project {
+    width: calc(95vw - 120px);
+    display: grid;
+    grid-template-columns: 1.5fr 3fr;
+    grid-template-rows: auto auto;
+    grid-gap: 1em;
+  }
+
+  .project--image {
+    img {
+      height: 80%;
+    }
+
+    #bastardimage {
+      margin-left: 0;
+    }
+  }
+}
+
 @mixin projects--laptop {
+  #projectbody {
+    background-image: url(../images/lines.png);
+    background-size: 85vh;
+    background-repeat: no-repeat;
+    background-position: -15vw 30px;
+    background-attachment: fixed;
+  }
+
   .header--projects {
     margin: 1.5em 0 3em 50%;
     h2 {
@@ -128,6 +156,7 @@ article.project {
   }
 
   article.project {
+    width: 95vw;
     display: grid;
     grid-template-columns: 1.5fr 3fr;
     grid-template-rows: auto auto;

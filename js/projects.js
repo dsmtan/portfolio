@@ -42,6 +42,11 @@ function fillTemplate(project) {
 
   if (project.id == "playground") {
     copy.querySelector("#projectlink").style.display = "none";
+  } else if (project.id == "bastard") {
+    copy.querySelector("#projectlink").style.display = "block";
+    copy.querySelector("#projectlink").href = project.projectlink;
+    copy.querySelector("#projectlink").classList.add("bastardopenlink");
+    // bastardWindow(copy);
   } else {
     copy.querySelector("#projectlink").style.display = "block";
     copy.querySelector("#projectlink").href = project.projectlink;
@@ -55,6 +60,27 @@ function fillTemplate(project) {
 
   main.appendChild(copy);
 }
+
+// function bastardWindow(copy) {
+//   // if projectlink in bastard clicked
+//   const bastardLink = copy.querySelector(".bastardopenlink");
+//   bastardLink.addEventListener("click", resizeWindow);
+
+//   function resizeWindow() {
+//     event.preventDefault();
+//     window.open(
+//       this.href,
+//       "targetWindow",
+//       "toolbar=no, location=no, status=no, menubar=no,scrollbars=yes,resizable=yes,width=360,height=740"
+//     );
+//     return false;
+//     // window.open(
+//     //   "http://www.javascript-coder.com",
+//     //   "mywindow",
+//     //   "menubar=1,resizable=1,width=360,height=640"
+//     // );
+//   }
+// }
 
 // NAVIGATION //
 // --- MOBILE NAVIGATION --- //
