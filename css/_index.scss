@@ -192,17 +192,11 @@
     font-size: 3.2em;
   }
 
-  #indexbody {
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-
+  .main--index {
     section {
       display: block;
       min-height: 100vh;
       margin: 0;
-      scroll-snap-align: start;
-      scroll-behavior: smooth;
     }
   }
 
@@ -231,10 +225,9 @@
 
   .div--trianglebackground {
     background: none;
-
     display: block;
     height: 83vh;
-    min-height: none;
+    min-height: auto;
     width: 48vw;
     top: 3.5vh;
     left: -40px;
