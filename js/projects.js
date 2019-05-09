@@ -5,6 +5,7 @@
 let shownProject;
 
 window.onload = function() {
+  navInit();
   //get user chosen project from local
   shownProject = JSON.parse(window.localStorage.getItem("project"));
   console.log(shownProject.projectname);
@@ -38,7 +39,14 @@ function fillTemplate(project) {
   copy.querySelector("#projectname").textContent = project.projectheader;
   copy.querySelector("#subheader").textContent = project.subheader;
   copy.querySelector("#projectintro").textContent = project.introduction;
-  copy.querySelector("#projectlink").href = project.projectlink;
+
+  if (project.id == "playground") {
+    copy.querySelector("#projectlink").style.display = "none";
+  } else {
+    copy.querySelector("#projectlink").style.display = "block";
+    copy.querySelector("#projectlink").href = project.projectlink;
+  }
+
   copy.querySelector("#skillslist").innerHTML = project.skills;
   copy.querySelector(".project--image").innerHTML = project.mainimage;
 
@@ -46,4 +54,40 @@ function fillTemplate(project) {
     project.longdescription;
 
   main.appendChild(copy);
+}
+
+// NAVIGATION //
+// --- MOBILE NAVIGATION --- //
+const menuBtn = document.querySelector(".burgermenu");
+const closeBtn = document.querySelector(".closebtn");
+const mobileNav = document.querySelector(".nav--mobile");
+
+function navInit() {
+  menuBtn.addEventListener("click", openNav);
+  closeBtn.addEventListener("click", closeNav);
+  document.addEventListener(
+    "click",
+    function(event) {
+      if (event.target.classList.contains("navlink")) {
+        navlinkClicked(event);
+      } else if (event.target.classList.contains("uparrow")) {
+        gotoTop();
+      }
+    },
+    false
+  );
+}
+
+function navlinkClicked(event) {
+  closeNav();
+}
+
+function openNav() {
+  mobileNav.style.height = "100%";
+  mobileNav.style.WebkitTransition = "0.4s";
+}
+
+function closeNav() {
+  mobileNav.style.height = "0%";
+  mobileNav.style.WebkitTransition = "0.2s";
 }

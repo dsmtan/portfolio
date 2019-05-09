@@ -2,17 +2,17 @@
   {
     "id": "bastard",
     "projectheader": "Bastard Café",
-    "subheader": "REST API web app (school project)",
+    "subheader": "REST API web app",
     "introduction": "The assignment was to design and develop a persona driven mobile web app (prototype) for Bastard Café, a well-known café with over 2.000 board games in Copenhagen. ",
     "projectlink": "https://exnuncdesigns.com/kea/sem2/bastardcafe/index.html",
-    "mainimage": "<img id=\"bastardimage\" src=\"images/bastardmockup.png\" /><div class=\"videoframe\"><video autoplay loop><source src=\"images/bastardvideo.mp4\" type=\"video/mp4\">Sorry, your browser doesn't support embedded videos.</video></div>",
+    "mainimage": "<img id=\"bastardimage\" src=\"images/bastardmockup.png\" /><div class=\"videoframe\"><video muted autoplay loop><source src=\"images/bastardvideo.mp4\" type=\"video/mp4\">Sorry, your browser doesn't support embedded videos.</video></div>",
     "skills": "<li>HTML & CSS</li> <li>JavaScript</li> <li>REST API</li> <li>Wordpress</li><li>UX Research & Design</li><li>Adobe Illustrator</li>",
     "longdescription": "<h4>Description</h4><p>The main focus of this project was to create a web app that was perfectly tailored to the needs of the user, both in design as in functionality.</p><p>I did extensive target group research for Bastard Café and created a persona on whom my entire design would be based. My persona is a 29-year-old board game addict from Copenhagen, whose goals are to meet other passionate board game players who can challenge him and to try out as many new board games as possible.</p><h5>DESIGN</h5><p>I wanted the design to have a playful retro feel to it, that would take you back to playing board games in your childhood. I also added in references to a board game called Carcassonne with the puppets (meeples) I used prominently on the home screen navigation and more subtly throughout the app. True board game fans would recognize and appreciate the reference immediately, while to others they might just seem regular funny puppets.</p><h5>DEVELOPMENT</h5><p>The assignment required a Wordpress back-end as a CMS, so Bastard Café would hypothetically be able to maintain the content themselves. Therefore I created a logical and user-friendly data structure in Wordpress and all the data for the web app are fetched using the Wordpress REST API.</p>"
   },
   {
     "id": "volt",
     "projectheader": "Volt",
-    "subheader": "Purchase flow and landing page (school project)",
+    "subheader": "Purchase flow and landing page",
     "introduction": "Volt is a company that provides a powerbank swapping service at festivals. They wanted to lower the bounce rate on their Roskilde Festival landing page and high rate of users abandoning their basket. In a pair, we redesigned their landing page and purchase flow.",
     "projectlink": "https://exnuncdesigns.com/kea/sem3/volt/purchase-flow/flow-start.html",
     "mainimage": "<img id=\"image\" src=\"images/voltmockup.png\" />",
@@ -24,10 +24,10 @@
     "projectheader": "JS/REACT Playground",
     "subheader": "Several small projects",
     "introduction": "This is a collection of small experiments I played around with while learning JavaScript and React.",
-    "projectlink": "url",
+    "projectlink": "",
     "mainimage": "<img id=\"image\" src=\"images/playground.png\" />",
-    "skills": " <li>JavaScript</li> <li>REST API</li>",
-    "longdescription": "<h4>Description</h4><p>UNDER CONSTRUCTION -- These JS experiments are purely build for functionality, without design intentions.</p><a href=\"https://dsmtan.github.io/2019_StudentList/index.html\" target=\"_blank\">Hogwarts Student List</a><a href=\"https://dsmtan.github.io/color-palette/color.html\" target=\"_blank\">Color Palette Generator</a><a href=\"https://dsmtan.github.io/picture-puzzle/puzzle.html\" target=\"_blank\">Puzzle maker from any image url</a><a href=\"https://dsmtan.github.io/2019_colorpicker/colorpicker.html\" target=\"_blank\">Color picker from image</a>"
+    "skills": " <li>JavaScript</li><li>REACT</li> <li>REST API</li>",
+    "longdescription": "<h4>Description</h4><p>-- UNDER CONSTRUCTION --<br>These JS experiments are purely build for functionality, without any design intentions.</p><a href=\"https://dsmtan.github.io/2019_StudentList/index.html\" target=\"_blank\">Hogwarts Student List</a><a href=\"https://dsmtan.github.io/color-palette/color.html\" target=\"_blank\">Color Palette Generator</a><a href=\"https://dsmtan.github.io/picture-puzzle/puzzle.html\" target=\"_blank\">Puzzle maker from any image url</a><a href=\"https://dsmtan.github.io/2019_colorpicker/colorpicker.html\" target=\"_blank\">Color picker from image</a>"
   },
   {
     "id": "crazystupid",

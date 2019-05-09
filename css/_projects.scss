@@ -9,10 +9,14 @@
   h2 {
     font-size: 2.3em;
   }
+
+  .burgermenu {
+    margin-right: 12px;
+  }
 }
 
 article.project {
-  width: 90vw;
+  width: 95vw;
   height: auto;
   max-width: 1200px;
   margin: 2em auto;
@@ -25,11 +29,11 @@ article.project {
 
   > div {
     background-color: #c4d5e060;
-    padding: 2em;
+    padding: 1.5em;
   }
 
   h3 {
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 400;
   }
 
@@ -40,7 +44,7 @@ article.project {
   }
 
   p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin: 1em 0;
   }
 
@@ -54,7 +58,7 @@ article.project {
   a {
     text-decoration: none;
     color: $yellow;
-    font-size: 1.5em;
+    font-size: 1.4em;
     display: block;
   }
 
@@ -128,6 +132,40 @@ article.project {
     grid-template-columns: 1.5fr 3fr;
     grid-template-rows: auto auto;
     grid-gap: 1em;
+
+    h3 {
+      font-size: 2em;
+      font-weight: 400;
+    }
+
+    #subheader {
+      font-weight: 400;
+      font-size: 1.3em;
+      margin: 0.5em 0 1em;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin: 1em 0;
+    }
+
+    h4 {
+      font-size: 1.3em;
+      margin: 0.5em 0 1em;
+    }
+
+    a {
+      font-size: 1.5em;
+    }
+
+    li {
+      font-size: 1.2em;
+    }
+
+    a.backlink {
+      font-size: 1.2em;
+      margin: 1em 2em 1em 0;
+    }
   }
 
   .project--image {

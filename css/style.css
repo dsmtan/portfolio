@@ -602,8 +602,12 @@ p {
   font-size: 2.3em;
 }
 
+.header--projects .burgermenu {
+  margin-right: 12px;
+}
+
 article.project {
-  width: 90vw;
+  width: 95vw;
   height: auto;
   max-width: 1200px;
   margin: 2em auto;
@@ -620,11 +624,11 @@ article.project {
 
 article.project > div {
   background-color: #c4d5e060;
-  padding: 2em;
+  padding: 1.5em;
 }
 
 article.project h3 {
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 400;
 }
 
@@ -635,7 +639,7 @@ article.project #subheader {
 }
 
 article.project p {
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin: 1em 0;
 }
 
@@ -649,7 +653,7 @@ article.project h4 {
 article.project a {
   text-decoration: none;
   color: #d5ad39;
-  font-size: 1.5em;
+  font-size: 1.4em;
   display: block;
 }
 
@@ -1040,6 +1044,33 @@ article.project a.backlink {
         grid-template-rows: auto auto;
     grid-gap: 1em;
   }
+  article.project h3 {
+    font-size: 2em;
+    font-weight: 400;
+  }
+  article.project #subheader {
+    font-weight: 400;
+    font-size: 1.3em;
+    margin: 0.5em 0 1em;
+  }
+  article.project p {
+    font-size: 1.2em;
+    margin: 1em 0;
+  }
+  article.project h4 {
+    font-size: 1.3em;
+    margin: 0.5em 0 1em;
+  }
+  article.project a {
+    font-size: 1.5em;
+  }
+  article.project li {
+    font-size: 1.2em;
+  }
+  article.project a.backlink {
+    font-size: 1.2em;
+    margin: 1em 2em 1em 0;
+  }
   .project--image {
     height: 100%;
   }
@@ -1378,6 +1409,33 @@ article.project a.backlink {
         grid-template-rows: auto auto;
     grid-gap: 1em;
   }
+  article.project h3 {
+    font-size: 2em;
+    font-weight: 400;
+  }
+  article.project #subheader {
+    font-weight: 400;
+    font-size: 1.3em;
+    margin: 0.5em 0 1em;
+  }
+  article.project p {
+    font-size: 1.2em;
+    margin: 1em 0;
+  }
+  article.project h4 {
+    font-size: 1.3em;
+    margin: 0.5em 0 1em;
+  }
+  article.project a {
+    font-size: 1.5em;
+  }
+  article.project li {
+    font-size: 1.2em;
+  }
+  article.project a.backlink {
+    font-size: 1.2em;
+    margin: 1em 2em 1em 0;
+  }
   .project--image {
     height: 100%;
   }
@@ -1563,6 +1621,33 @@ article.project a.backlink {
     -ms-grid-rows: auto auto;
         grid-template-rows: auto auto;
     grid-gap: 1em;
+  }
+  article.project h3 {
+    font-size: 2em;
+    font-weight: 400;
+  }
+  article.project #subheader {
+    font-weight: 400;
+    font-size: 1.3em;
+    margin: 0.5em 0 1em;
+  }
+  article.project p {
+    font-size: 1.2em;
+    margin: 1em 0;
+  }
+  article.project h4 {
+    font-size: 1.3em;
+    margin: 0.5em 0 1em;
+  }
+  article.project a {
+    font-size: 1.5em;
+  }
+  article.project li {
+    font-size: 1.2em;
+  }
+  article.project a.backlink {
+    font-size: 1.2em;
+    margin: 1em 2em 1em 0;
   }
   .project--image {
     height: 100%;
