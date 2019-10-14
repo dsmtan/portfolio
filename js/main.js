@@ -142,7 +142,7 @@ let explanations = [
   {
     id: 0,
     header: "Your Users",
-    text: `Currently, I'm working in digital content marketing for an online application made for small businesses. This entails conducting user research in different industries for our marketing purposes. I've learned much about user behaviour, working with user feedback and carrying out user interviews. I'll always prioritize giving your users the best experience they can get. <span class="nextarrow"> >>> </span>`
+    text: `I've worked in digital content marketing for an application made for small businesses. This job entailed conducting user research in different industries for our marketing purposes. I've learned much about user behaviour, working with user feedback and carrying out user interviews. I'll always prioritize giving your users the best experience they can get. <span class="nextarrow"> >>> </span>`
   },
   {
     id: 1,
